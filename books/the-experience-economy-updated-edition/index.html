@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Experience Economy &mdash; Infografia Completa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ece6db;--bg-dark:#14110f;--ink:#14110f;--ink-soft:#4a443d;--paper:#f5f1ea;--rule:#14110f;--accent-red:#b8341c;--accent-ochre:#b8893d;--accent-green:#3a5a40;--accent-blue:#2a4a5a;--warn:#b8341c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Fraunces',Georgia,serif;font-optical-sizing:auto;font-weight:400;line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.sans{font-family:'Inter Tight',system-ui,sans-serif}.mono{font-family:'JetBrains Mono',monospace}.serif{font-family:'Fraunces',Georgia,serif}
+.container{max-width:1180px;margin:0 auto;padding:0 32px}
+section{padding:80px 0;border-bottom:1px solid var(--rule)}
+section.dark{background:var(--bg-dark);color:var(--paper);border-bottom-color:var(--paper)}
+section.dark .rule{background:var(--paper)}
+section.dark h2,section.dark h3{color:var(--paper)}
+.hero{min-height:100vh;background:var(--bg-dark);color:var(--paper);display:flex;flex-direction:column;justify-content:space-between;padding:48px 32px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(58,90,64,.2),transparent 50%),radial-gradient(circle at 80% 70%,rgba(184,137,61,.12),transparent 40%);pointer-events:none}
+.hero-top{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;color:rgba(245,241,234,.5);z-index:2}
+.hero-main{z-index:2;max-width:1180px;margin:0 auto;width:100%;padding:60px 0}
+.hero-tag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:var(--accent-green);text-transform:uppercase;margin-bottom:24px}
+.hero-title{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(48px,8vw,112px);line-height:.95;letter-spacing:-.03em;margin-bottom:16px}
+.hero-title em{font-style:italic;font-weight:400;color:var(--accent-ochre)}
+.hero-subtitle{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(20px,2.5vw,28px);color:rgba(245,241,234,.7);margin-bottom:48px;max-width:720px}
+.hero-authors{font-family:'Inter Tight',sans-serif;font-size:14px;letter-spacing:.05em;color:rgba(245,241,234,.8)}
+.hero-thesis{margin-top:64px;padding:32px;border:1px solid rgba(245,241,234,.2);border-left:4px solid var(--accent-green);max-width:820px;background:rgba(0,0,0,.2)}
+.hero-thesis-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent-green);margin-bottom:12px}
+.hero-thesis-text{font-family:'Fraunces',serif;font-size:clamp(18px,2vw,22px);line-height:1.4;color:var(--paper)}
+.hero-bottom{display:flex;justify-content:space-between;align-items:end;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(245,241,234,.4);z-index:2}
+.meta-strip{background:var(--ink);color:var(--paper);padding:32px}
+.meta-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:32px}
+.meta-cell{border-left:1px solid rgba(245,241,234,.2);padding-left:16px}
+.meta-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,241,234,.5);margin-bottom:8px}
+.meta-value{font-family:'Fraunces',serif;font-size:22px;font-weight:400}
+.section-num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent-green);margin-bottom:12px}
+h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.02em;margin-bottom:48px;color:var(--ink)}
+h2 em{font-style:italic;color:var(--accent-green);font-weight:400}
+h3{font-family:'Fraunces',serif;font-weight:500;font-size:28px;line-height:1.15;letter-spacing:-.015em;margin-bottom:16px}
+.tldr-tabs{display:flex;gap:0;border-bottom:2px solid var(--ink);margin-bottom:32px}
+.tldr-tabs [data-tab]{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:12px 20px;cursor:pointer;border:none;background:none;color:var(--ink-soft);border-bottom:2px solid transparent;margin-bottom:-2px;transition:color .2s,border-color .2s}
+.tldr-tabs [data-tab]:hover{color:var(--ink)}
+.tldr-tabs [data-tab].active{color:var(--accent-green);border-bottom-color:var(--accent-green)}
+[data-panel]{display:none}[data-panel].active{display:block}
+.tldr-grid{display:grid;grid-template-columns:1fr;gap:32px}
+.tldr-level{border-top:2px solid var(--ink);padding-top:24px}
+.tldr-level-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent-green);margin-bottom:8px}
+.tldr-1 .tldr-text{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(28px,3.5vw,44px);line-height:1.15;font-weight:300;letter-spacing:-.01em}
+.tldr-2 .tldr-text{font-family:'Fraunces',serif;font-size:19px;line-height:1.6;max-width:780px}
+.tldr-3 .tldr-text{font-family:'Fraunces',serif;font-size:17px;line-height:1.65;max-width:780px;color:var(--ink-soft)}
+.tldr-3 .tldr-text p{margin-bottom:14px}
+.chain{display:grid;grid-template-columns:1fr;gap:0;counter-reset:step}
+.chain-step{display:grid;grid-template-columns:80px 1fr;gap:24px;padding:24px 0;border-bottom:1px dashed rgba(20,17,15,.2);counter-increment:step}
+.chain-step:last-child{border-bottom:none}
+.chain-num{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent-green);font-weight:700;letter-spacing:.1em;padding-top:6px}
+.chain-num::before{content:"0" counter(step)}
+.chain-content h4{font-family:'Fraunces',serif;font-weight:500;font-size:22px;line-height:1.2;margin-bottom:8px}
+.chain-content p{font-size:16px;line-height:1.55;color:var(--ink-soft)}
+.chapters-grid{display:grid;grid-template-columns:1fr;gap:0}
+.chapter-card{display:grid;grid-template-columns:80px 1fr;gap:24px;padding:28px 0;border-top:1px solid var(--ink)}
+.chapter-card:last-child{border-bottom:1px solid var(--ink)}
+.chapter-num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--accent-green);text-transform:uppercase;padding-top:4px}
+.chapter-title{font-family:'Fraunces',serif;font-weight:500;font-size:24px;line-height:1.15;margin-bottom:6px}
+.chapter-tagline{font-family:'Fraunces',serif;font-style:italic;font-size:16px;color:var(--accent-ochre);margin-bottom:14px}
+.chapter-summary{font-size:16px;line-height:1.6;color:var(--ink-soft);margin-bottom:14px;max-width:760px}
+.chapter-points{list-style:none;margin-bottom:14px}
+.chapter-points li{font-size:15px;line-height:1.55;padding-left:20px;position:relative;margin-bottom:10px;color:var(--ink-soft)}
+.chapter-points li::before{content:'\2014';position:absolute;left:0;color:var(--accent-green)}
+.chapter-quote{font-family:'Fraunces',serif;font-style:italic;font-size:15px;line-height:1.5;padding:12px 0 12px 20px;border-left:3px solid var(--accent-ochre);color:var(--ink);max-width:700px}
+.part-divider{margin:56px 0 32px;padding-top:24px;border-top:4px solid var(--ink)}
+.part-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent-green);margin-bottom:8px}
+.part-title{font-family:'Fraunces',serif;font-weight:300;font-size:40px;line-height:1;letter-spacing:-.02em}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;border-top:1px solid var(--ink)}
+.glossary-term{padding:24px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.glossary-name{font-family:'Fraunces',serif;font-weight:500;font-size:20px;margin-bottom:8px;color:var(--ink)}
+.glossary-def{font-size:15px;line-height:1.5;color:var(--ink-soft)}
+.quotes-grid{display:grid;grid-template-columns:1fr;gap:0}
+.pull-quote{padding:40px 0;border-bottom:1px solid rgba(245,241,234,.2)}
+.pull-quote:last-child{border-bottom:none}
+.pull-quote-text{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(22px,3vw,34px);line-height:1.25;letter-spacing:-.01em;margin-bottom:16px}
+.pull-quote-cite{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-ochre)}
+.critique-grid{display:grid;grid-template-columns:1fr;gap:24px}
+.critique-item{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:20px 0;border-top:1px dashed rgba(245,241,234,.3)}
+.critique-item:first-child{border-top:1px solid var(--paper)}
+.critique-mark{font-family:'JetBrains Mono',monospace;font-size:18px;color:var(--accent-ochre);font-weight:700}
+.critique-content h4{font-family:'Fraunces',serif;font-size:19px;margin-bottom:8px;color:var(--paper);font-weight:500}
+.critique-content p{font-size:15px;line-height:1.6;color:rgba(245,241,234,.75)}
+.connections-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0}
+.connection{padding:20px 24px 20px 0;border-top:1px solid var(--ink)}
+.connection-author{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-green);margin-bottom:4px}
+.connection-title{font-family:'Fraunces',serif;font-size:17px;font-weight:500;line-height:1.2;margin-bottom:8px}
+.connection-relation{font-size:14px;color:var(--ink-soft);line-height:1.5}
+.closing{text-align:center;padding:120px 32px;background:var(--bg-dark);color:var(--paper)}
+.closing-text{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(32px,5vw,56px);line-height:1.1;letter-spacing:-.02em;max-width:800px;margin:0 auto 32px}
+.closing-author{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent-ochre)}
+.rule{width:60px;height:2px;background:var(--ink);margin-bottom:32px}
+.rule.accent{background:var(--accent-green)}
+/* ZOOM */
+.zoom-trigger{font-family:'JetBrains Mono',monospace;font-size:11px;background:none;border:1px solid #3a5a40;color:#3a5a40;padding:3px 10px;border-radius:3px;cursor:pointer;margin:8px 0;display:inline-block;transition:all .2s}
+.zoom-trigger:hover{background:#3a5a40;color:#f5f1ea}
+.zoom-trigger-inline{font-family:'JetBrains Mono',monospace;font-size:10px;background:none;border:1px solid #3a5a40;color:#3a5a40;padding:1px 6px;border-radius:3px;cursor:pointer;margin-left:6px;transition:all .2s;vertical-align:middle}
+.zoom-trigger-inline:hover{background:#3a5a40;color:#f5f1ea}
+.zoom-panel{max-height:0;overflow:hidden;transition:max-height .4s ease;margin:8px 0 8px 16px;border-left:2px solid #3a5a40;padding-left:14px}
+.zoom-panel.expanded{max-height:5000px}
+.zoom-item{margin-bottom:10px}
+.zoom-item p{font-size:15px;line-height:1.55;color:var(--ink-soft);margin:0}
+.zoom-bullet{color:#3a5a40;font-family:'JetBrains Mono',monospace;font-size:13px;margin-right:6px}
+section.dark .zoom-trigger,section.dark .zoom-trigger-inline{border-color:#b8893d;color:#b8893d}
+section.dark .zoom-trigger:hover,section.dark .zoom-trigger-inline:hover{background:#b8893d;color:#14110f}
+section.dark .zoom-panel{border-left-color:#b8893d}
+section.dark .zoom-bullet{color:#b8893d}
+section.dark .zoom-item p{color:rgba(245,241,234,.75)}
+.bilingual-quote{position:relative}
+.bilingual-quote .quote-original{transition:opacity .3s ease}
+.bilingual-quote .quote-translation{position:absolute;top:0;left:0;right:0;opacity:0;transition:opacity .3s ease;font-style:normal;color:var(--accent-ochre);pointer-events:none}
+@media(hover:hover){.bilingual-quote:hover .quote-original{opacity:.2}.bilingual-quote:hover .quote-translation{opacity:1}}
+.bilingual-quote.show-translation .quote-original{opacity:.2}
+.bilingual-quote.show-translation .quote-translation{opacity:1;pointer-events:auto}
+.add-quotes-btn{font-family:'JetBrains Mono',monospace;font-size:11px;background:none;border:1px solid var(--accent-ochre);color:var(--accent-ochre);padding:3px 10px;border-radius:3px;cursor:pointer;margin-top:12px;display:inline-block;transition:all .2s}
+.add-quotes-btn:hover{background:var(--accent-ochre);color:var(--paper)}
+@media(max-width:720px){.container{padding:0 20px}section{padding:56px 0}.hero{padding:32px 20px}.chapter-card{grid-template-columns:1fr;gap:12px}.chain-step{grid-template-columns:1fr;gap:8px}.meta-grid{gap:20px}.meta-cell{border-left:none;border-top:1px solid rgba(245,241,234,.2);padding-left:0;padding-top:12px}.critique-item{grid-template-columns:1fr;gap:4px}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-tag,.hero-title,.hero-subtitle,.hero-authors,.hero-thesis{opacity:0;animation:fadeUp .8s ease forwards}
+.hero-tag{animation-delay:.1s}.hero-title{animation-delay:.25s}.hero-subtitle{animation-delay:.45s}.hero-authors{animation-delay:.6s}.hero-thesis{animation-delay:.8s}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+<div class="hero-top"><span>Infografia de libro</span><span>Non-fiction argumentativo</span></div>
+<div class="hero-main">
+<div class="hero-tag">Harvard Business Review Press &middot; 2011 (orig. 1999)</div>
+<h1 class="hero-title">The <em>Experience</em> Economy</h1>
+<p class="hero-subtitle">Updated Edition &mdash; Work Is Theatre &amp; Every Business a Stage</p>
+<p class="hero-authors">B. Joseph Pine II &amp; James H. Gilmore</p>
+<div class="hero-thesis">
+<div class="hero-thesis-label">Tesis Central</div>
+<div class="hero-thesis-text">Las empresas deben dejar de vender bienes y servicios para poner en escena experiencias memorables y guiar transformaciones personales, ascendiendo la Progresion del Valor Economico.</div>
+</div>
+</div>
+<div class="hero-bottom"><span>359 paginas &middot; 14 secciones</span><span>ISBN 978-1-4221-6197-5</span></div>
+</header>
+
+<!-- ===== METADATA ===== -->
+<div class="meta-strip">
+<div class="meta-grid">
+<div class="meta-cell"><div class="meta-label">Publicacion</div><div class="meta-value">2011</div></div>
+<div class="meta-cell"><div class="meta-label">Original</div><div class="meta-value">1999</div></div>
+<div class="meta-cell"><div class="meta-label">Paginas</div><div class="meta-value">359</div></div>
+<div class="meta-cell"><div class="meta-label">Genero</div><div class="meta-value">Argumentativo</div></div>
+<div class="meta-cell"><div class="meta-label">Editorial</div><div class="meta-value">HBR Press</div></div>
+</div>
+</div>
+
+<!-- ===== TL;DR ===== -->
+<section id="tldr">
+<div class="container">
+<div class="section-num">01</div>
+<h2>TL;DR</h2>
+<div class="tldr-tabs">
+<button data-tab="s1" class="active">1 Frase</button>
+<button data-tab="s2">1 Parrafo</button>
+<button data-tab="s3">Completo</button>
+</div>
+<div data-panel="s1" class="active">
+<div class="tldr-grid"><div class="tldr-level tldr-1"><div class="tldr-level-label">Hook</div><div class="tldr-text">Tu negocio es un escenario. Actua en consecuencia.</div></div></div>
+</div>
+<div data-panel="s2">
+<div class="tldr-grid"><div class="tldr-level tldr-2"><div class="tldr-level-label">En un parrafo</div><div class="tldr-text">Las experiencias son una oferta economica tan distinta de los servicios como estos lo son de los bienes. Las empresas que comprenden esto dejan de competir por precio y comienzan a cobrar por el tiempo del cliente, disenando experiencias memorables usando principios teatrales (THEME-ing, cuatro reinos, cuatro formas de teatro) y Mass Customization como puente. La progresion culmina en transformaciones, donde el cliente es el producto y se cobra por resultados demostrados.</div></div></div>
+</div>
+<div data-panel="s3">
+<div class="tldr-grid"><div class="tldr-level tldr-3"><div class="tldr-level-label">Resumen extendido</div><div class="tldr-text">
+<p>La commoditizacion destruye margenes en bienes y servicios. La solucion no es competir por precio sino ascender la Progresion del Valor Economico: de commodities fungibles a bienes tangibles a servicios intangibles a experiencias memorables a transformaciones effectuales.</p>
+<p>Las experiencias se organizan en cuatro reinos (entertainment, educational, escapist, esthetic) y se disenan con cinco principios THEME-ing. El criterio definitivo es cobrar explicitamente por el tiempo del cliente en seis formas de admission fee. Mass Customization automaticamente eleva cualquier oferta un nivel en la progresion, reduciendo el customer sacrifice.</p>
+<p>El trabajo es teatro (modelo operativo, no metafora): drama=estrategia, script=procesos, theatre=trabajo, performance=oferta. Cuatro formas (improv, platform, matching, street) responden a distintas necesidades. Street theatre equivale a Mass Customization: bits estandarizados llamados on demand para cada audiencia.</p>
+<p>Las transformaciones son la quinta y ultima oferta. El comprador es un aspirante que busca ser diferente. La empresa diagnostica aspiraciones, monta experiencias transformadoras, y da seguimiento. La relacion unica entre guia y guiado resiste la commoditizacion porque cada individuo es irrepetiblemente unico.</p>
+</div></div></div>
+</div>
+</div>
+</section>
+
+<!-- ===== CHAIN OF ARGUMENT ===== -->
+<section id="chain">
+<div class="container">
+<div class="section-num">02</div>
+<h2>Cadena de <em>Argumento</em></h2>
+<div class="chain">
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>La commoditizacion destruye margenes en bienes y servicios</h4>
+<p>La competencia por precio es insostenible: descuentos, liquidaciones y guerras de precio son sintomas de una economia industrial agotada.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El grano de cafe demuestra la Progresion: de 1-2 centavos como commodity a mas de $15 como experiencia en Caffe Florian, Venecia. Dos ordenes de magnitud con el mismo insumo fisico.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los datos del Bureau of Labor Statistics (CPI 1959-2009) confirman que el indice de precios de experiencias (admissions) crece mas rapido que servicios, que crecen mas que bienes.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Walmart e Internet son las dos mayores fuerzas de commoditizacion: 'countless retail chains have met their demise as they insisted on merely merchandising finished goods.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La crisis financiera de 2008 valido la tesis: la economia de servicios fallo porque su crecimiento real provino de servicios financieros que 'artificially propped up a world of goods.'</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>Las experiencias son una oferta economica distinta</h4>
+<p>Commodities son fungibles, bienes tangibles, servicios intangibles, experiencias memorables. Cada una tiene su propia logica de pricing y vocabulario.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Adam Smith (1776) considero a los artistas 'unproductive labour' porque su trabajo 'perishes in the very instant of its production.' El mismo error categorial que hoy cometen quienes ven experiencias como sub-servicios.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La tabla de distinciones establece diferencias sistematicas: trader/manufacturer/provider/stager; market/user/client/guest; fungible/tangible/intangible/memorable.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Empleo CAGR 1959-2009: experiencias 2.2% vs servicios 2.0% vs bienes -0.1%. Las experiencias son el unico sector que crea empleo neto ademas de servicios.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Walt Disney fue el primero en crear theme parks inmersivos (1955), convirtiendo 'customers' en 'guests' y 'employees' en 'cast members.'</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>Los cuatro reinos permiten disenar mas alla del entretenimiento</h4>
+<p>Entertainment (pasivo-absorcion), Educational (activo-absorcion), Escapist (activo-inmersion), Esthetic (pasivo-inmersion). El sweet spot combina los cuatro.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los dos ejes son participacion (pasiva a activa) y conexion (absorcion a inmersion). La combinacion produce cuatro reinos y seis combinaciones intermedias.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Keukenhof (Holanda): 70 acres, 16K variedades de flores, senderos escapistas, senalizacion educativa y shows de entretenimiento.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Internet es inherentemente activo: 'interactive entertainment is an oxymoron.' AOL gano porque entendio que la gente queria experiencia social.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Real fake (CityWalk reconoce su artificio) vs fake fake (Disney lo oculta): la consistencia interna importa mas que la autenticidad literal.</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>Cinco principios THEME-ing y cobro por el tiempo del cliente</h4>
+<p>Theme, Harmonize impressions, Eliminate negative cues, Mix in memorabilia, Engage the five senses. El criterio definitivo: cobrar admission fee.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Joie de Vivre eligio Rolling Stone como tema para un motel deteriorado. Extrajo 5 impresiones y se convirtio en hotel favorito de bandas de gira.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Seis formas de admission fee: entry, per-event, per-period, initiation, access, membership. Netflix destruyo Blockbuster usando per-period.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'You are what you charge for': si no cobras admission, no estas en experiencias. Niketown y Disney retail fracasaron por regalar la experiencia.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los cinco sentidos se involucran secuencialmente: la niebla del Rainforest Cafe activa sonido, vista, tacto, olfato y gusto en ese orden.</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>Mass Customization eleva automaticamente las ofertas</h4>
+<p>Customizar un bien lo convierte en servicio; customizar un servicio lo convierte en experiencia. Cuatro tipos de customizacion responden a cuatro tipos de sacrificio.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Customer sacrifice es la brecha entre lo que el cliente acepta y lo que quiere exactamente. La satisfaccion mide expectativas condicionadas; el sacrificio mide la brecha real.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Collaborative (Paris Miki), Adaptive (Lutron), Cosmetic (Hertz Gold), Transparent (ChemStation): cada enfoque genera una experiencia distinta.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Amazon.com ejemplifica la learning relationship: cada interaccion baja sacrificio. Un competidor identico estaria generaciones atras.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Dell logro cash conversion cycle de -36 dias pero fracaso al no crear sequel para servicios.</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>Sorpresa y suspense elevan experiencias mas alla de la satisfaccion</h4>
+<p>El modelo 4-S piramidal: Satisfaction, Sacrifice, Surprise, Suspense. La sorpresa crea el recuerdo; el suspense crea anticipacion.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Philip Romano dio comidas gratis aleatorias en Macaroni's &mdash; costo de 3.3% del gross con mayor impacto que publicidad equivalente.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Sorpresa no es 'superar expectativas' sino ir a direccion completamente inesperada fuera del dominio de expectativas.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los frequent purchase programs tienen un 'fatal flaw': entrenan al cliente a esperar cosas gratis.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Continental Airlines: el kit de premier flyer fue sorpresa el anio 1 y 'ho-hum' para el anio 5.</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>El trabajo es teatro: modelo operativo, no metafora</h4>
+<p>Drama=estrategia, Script=procesos, Theatre=trabajo, Performance=oferta. La herramienta 'in order to' transforma cualquier actividad.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Streisand mastico un chicle que no existia. Trabajo ES teatro: no habria sido mas genuina con chicle real.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Cuatro formas: Improv (ambos dinamicos), Platform (ambos estables), Matching (script dinamico), Street (performance dinamica).</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Street theatre = Mass Customization: bits estandarizados llamados on demand para cada audiencia.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Barb en U Penn demostro que incluso pasar tarjetas puede llenarse de intencion. Su puesto no fue automatizado al retirarse.</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>Las transformaciones son la quinta oferta: el cliente ES el producto</h4>
+<p>Las experiencias se commoditizan ('been there, done that'). Las transformaciones son effectuales, individuales y sostenidas.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Tres fases: diagnosticar aspiraciones, montar experiencias transformadoras, dar seguimiento. Sin alguna fase, no hay transformacion real.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>GSK Committed Quitters aumento 50% la probabilidad de dejar de fumar. Los aspirantes compraron MAS goods de GSK.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La progresion Insure &rarr; Assure &rarr; Ensure aplica a toda industria.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Mayeroff define caring como 'helping another grow and actualize himself.' Lectura obligatoria para la economia de transformaciones.</p></div>
+</div>
+</div></div>
+
+<div class="chain-step"><div class="chain-num"></div><div class="chain-content">
+<h4>Cada empresa debe encontrar su rol ascendiendo la Progresion</h4>
+<p>Stuff=commodities, things=goods, activities=services, time=experiences, outcomes=transformations.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Priority Management garantiza resultados: si el aspirante no cumple, no paga. Mas del 95% continuan el programa.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Progression of Valuable Intelligence: noise, data, information, knowledge, wisdom. Cada nivel requiere inteligencia superior.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Todo comercio involucra eleccion moral. La cosmovision del transformador sera parte explicita de la propuesta de valor.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La perfeccion es la transformacion ultima, pero pertenece al dominio divino, no del comercio humano.</p></div>
+</div>
+</div></div>
+
+</div>
+</div>
+</section>
+
+<!-- ===== CHAPTERS ===== -->
+<section id="chapters">
+<div class="container">
+<div class="section-num">03</div>
+<h2>Mapa de <em>Capitulos</em></h2>
+
+<div class="chapters-grid">
+
+<!-- ========== ch00a ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Preview<br>2011</div>
+<div>
+<div class="chapter-title">Beyond Goods and Services</div>
+<div class="chapter-tagline">Doce anios despues, la tesis sigue vigente y la crisis lo confirma.</div>
+<p class="chapter-summary">La economia de experiencias no es moda sino transformacion estructural de largo plazo; la crisis de 2008 confirma el agotamiento de economias basadas solo en bienes y servicios.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La tesis original fue publicada en quince idiomas y vendio mas de 300,000 copias, pero Pine &amp; Gilmore consideran que 'has not sufficiently penetrated the minds of enough business leaders and policy makers.' El problema no fue falta de difusion sino resistencia cultural: el mindset de manufactura y entrega de servicios sigue dominando.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La crisis financiera de 2008 es presentada como validacion empirica: la economia industrial 'has had its day' &mdash; es raro inventar un bien genuinamente nuevo, y cuando se logra, la automatizacion elimina empleos. La Service Economy fallo porque su crecimiento real vino de financial services que 'artificially propped up a world of goods with increasingly desperate financial instruments.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los tres 'campos de aplicacion' del pensamiento experiencial que surgieron son insuficientes: (1) experiential marketing solo usa experiencias para vender bienes existentes, (2) CEM solo hace interacciones 'friendlier and more convenient', y (3) digital experiences solo explotan nuevas plataformas. Ninguno crea output economico genuinamente nuevo.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Las cuatro oportunidades concretas: mass customization de bienes (ni un solo auto US se puede mass customizar &mdash; 'shameful'), teatro para servicios, cobro explicito por tiempo (6 formas de admission fee), y transformaciones con cobro por resultados.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La vision a largo plazo: transicion multi-decadal comparable a la transicion de economia agraria a industrial. 'The forces of creative destruction take time.'</p></div>
+</div>
+
+<ul class="chapter-points">
+<li><span>Build-A-Bear, Apple Store y Geek Squad florecieron mientras industrias de bienes declinaron</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Build-A-Bear: Maxine Clark abrio su primera tienda en 1999 'told by conventional retail experts that launching such an enterprise was foolhardy.' Hoy opera ~500 outlets worldwide.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Apple Store: disenado estudiando hospitality de Ritz-Carlton y boutique hotels. Ventas per square foot un orden de magnitud mayores que retail tipico.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Geek Squad: Robert Stephens tenia &lt;12 Special Agents en 1999. Best Buy lo adquirio y escalo a 24K+ agentes. 'Perhaps no other company matches the Geek Squad in exemplifying experience-staging principles.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Contraste: Gateway intento retail stores y Dell intento kiosks, 'but both lacked a rich appreciation for experience design.' Fracasaron por tratar retail como distribucion de bienes.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Implicacion sistemica: 'countless retail chains have met their demise as they insisted on merely merchandising finished goods. Walmart and online sellers ate their lunch.'</p></div>
+</div>
+</li>
+<li><span>Customer sacrifice es el concepto mas ignorado y probablemente mas poderoso del libro</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Definicion: 'the gap between what individual customers settle for and what each wants exactly.' No es insatisfaccion &mdash; el sacrificio mide la brecha real con lo que el cliente genuinamente desea.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La pregunta operativa: 'What one dimension of sacrifice, if eliminated, would create the greatest value for customers?'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Ejemplo automotriz: 'to this day, one cannot name a single U.S.-made model of automobile available via mass customization. It's shameful.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El mecanismo: mass customizing any good turns it automatically into a service; mass customizing any service turns it into an experience.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La consecuencia de ignorarlo: los clientes se resignan a aceptar lo que hay y las empresas miden satisfaccion sobre expectativas resignadas &mdash; un ciclo vicioso.</p></div>
+</div>
+</li>
+<li><span>Cuatro oportunidades: mass customization, teatro, cobro por tiempo, transformaciones</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Bienes mass customized: reemplazar supply chains con demand chains, producir solo en respuesta a demanda real.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Servicios teatralizados: managers deben 'give employees roles to play, help them characterize those roles, and invest time in rehearsing.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Cobro por tiempo: 'Time is the currency of experiences.' 6 formas: entry, per-event, per-period, initiation, access, membership. Netflix destruyo Blockbuster.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Transformaciones: 'charge not merely for time but for the change resulting from that time.' Healthcare, finanzas, educacion.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Las cuatro operan en escalera: cada una eleva al negocio un nivel en la Progression.</p></div>
+</div>
+</li>
+<li><span>Respuesta a criticas: teatro no es metafora, experiencias no son solo entertainment</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'We could not be clearer: it's not a metaphor but a model for human performance.' Alternativa: 'Theatrical Economy.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'The four E's are a means to avoid amusing ourselves to death.' Poner peliculas en aulas NO es experience-staging excellence.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Co-creation reconocida pero foco es supply-side. 'To treat transformation otherwise is tyranny.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Memorabilidad: Freytag explica que el cierre de una experiencia determina la calidad del recuerdo.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'All experiences trend toward inauthentic or virtual' &mdash; abordado en sus libros Authenticity e Infinite Possibility.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Goods and services are no longer enough to foster economic growth, create new jobs, and maintain economic prosperity."</div>
+<div class="chapter-quote quote-translation">"Los bienes y servicios ya no son suficientes para fomentar el crecimiento economico, crear nuevos empleos y mantener la prosperidad economica."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Perhaps the most ignored &mdash; and yet arguably the most powerful &mdash; concept in the entire book, namely the notion of reducing or eliminating customer sacrifice."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Twelve years ago we characterized the scene as poor service, no service, or self-service. Unfortunately, little has changed."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Actors prepare. Better human performances &mdash; focusing on the how, and not only the what &mdash; turn mundane interactions into engaging encounters."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"To treat transformation otherwise is tyranny."</em></p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch00b ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Preview<br>1999</div>
+<div>
+<div class="chapter-title">Step Right Up</div>
+<div class="chapter-tagline">Las experiencias son un genero economico existente pero previamente no articulado.</div>
+<p class="chapter-summary">Reconocer las experiencias como oferta economica propia abre posibilidades de expansion comparable a cuando los servicios se diferenciaron de los bienes.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La acumulacion retorica de descuentos en la apertura no es casual: cada frase es un sintoma del agotamiento de la competencia por precio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El acto fundacional del libro es nominar: darle nombre a algo que existia pero no se reconocia como categoria propia.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El paralelo historico es explicito: la economia de servicios declina como declino la industrial, y solo las experiencias pueden crear los empleos que se pierden.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La estructura del libro presenta dos rutas: directa (diseno de experiencias) e indirecta (Mass Customization como puente).</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Las experiencias son un genero de output economico previamente no articulado</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Disney existia desde 1955, pero nadie habia nombrado las experiencias como categoria economica separada de servicios. Es un acto de nominacion conceptual.</p></div>
+</div>
+</li>
+<li><span>La informacion no es oferta economica &mdash; solo cuando se constituye como bien, servicio o experiencia</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>John Perry Barlow: 'information wants to be free.' Solo cuando se empaqueta como bien, servicio o experiencia informativa crea valor economico.</p></div>
+</div>
+</li>
+<li><span>El enfasis moral: no SI las experiencias tomaran control, sino QUE TIPO</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Las Vegas es la capital de la experiencia e incluye elementos oscuros. La transicion es inexorable; la pregunta es que hacer con ella.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'The moral emphasis must be placed on what kinds of experiences will be staged.' Invitacion a ofrecer experiencias virtuosas.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los autores reconocen que experiencias artificiales son 'counterbalanced by the rise of real experiences: camping, kayaking, extreme sports.'</p></div>
+</div>
+</li>
+<li><span>Las transiciones economicas previas tambien tuvieron dislocaciones</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Those who decried previous economic shifts failed to stop the Progression. It happened despite their protestations.'</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Experiences represent an existing but previously unarticulated genre of economic output."</div>
+<div class="chapter-quote quote-translation">"Las experiencias representan un genero de output economico existente pero previamente no articulado."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Every business competing for the future is customer-centric, customer-driven, customer-focused, customer-yadda-yadda-yadda. So what's new?"</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Those who decried previous economic shifts failed to stop the Progression of Economic Value. It happened despite their protestations."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"The business executive, like everyone else, must in the end concern himself with the ultimate aims of man."</em></p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch01 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 1</div>
+<div>
+<div class="chapter-title">Welcome to the Experience Economy</div>
+<div class="chapter-tagline">Del grano de cafe a Caffe Florian: dos ordenes de magnitud con el mismo insumo.</div>
+<p class="chapter-summary">Las experiencias son una cuarta oferta economica, tan distinta de los servicios como estos lo son de los bienes, demostrado con datos empiricos de empleo, GDP y precios.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El grano de cafe recorre cinco niveles: commodity (1-2 centavos), bien (5-25 centavos), servicio (50 centavos a $1), experiencia ($2-5 en Starbucks), experiencia premium ($15+ en Caffe Florian). Dos ordenes de magnitud separan la commodity de la experiencia.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La parabola de la fiesta de cumpleanos resume la Progression en una familia generacional: de ingredientes por centavos a experiencias por $100-250+. Elizabeth Pine (7 anios) pago $146 'not including the cake' por un dia en una granja.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los datos del BLS (CPI 1959-2009) confirman empiricamente: el indice de experiencias (admissions) crece mas rapido que servicios, que crece mas que bienes, que crece mas que commodities.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Empleo CAGR 1959-2009: experiencias 2.2%, servicios 2.0%, bienes -0.1%, commodities -0.8%. Las experiencias son el unico sector ademas de servicios con crecimiento neto.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Adam Smith (1776) descarto a los artistas como 'unproductive labour.' Pero estudios de Cornell demostraron que comprar experiencias genera mas felicidad que comprar bienes.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>El cafe demuestra la Progresion: de 1 centavo a $15 por taza</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Caffe Florian: inmerso en sonidos y vistas de la Plaza San Marcos, Venecia, durante mas de una hora. El valor no es el cafe sino el tiempo en un lugar extraordinario. 'Was the coffee worth it? Assolutamente!'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Nivel commodity: 75 centavos/libra en futures. Nivel bien: tostado y empaquetado 5-25 centavos/taza. Nivel servicio: preparado en diner 50 centavos-$1. Nivel experiencia: Starbucks $2-5.</p></div>
+</div>
+</li>
+<li><span>Walt Disney creo el primer theme park inmersivo diferenciandose de amusement parks</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Disney estaba insatisfecho con los amusement parks: 'dammit, why can't there be a better place to take your children?' Su idea: 'a cartoon that immerses the audience.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Convirtio 'customers' en 'guests' y 'employees' en 'cast members.' Cada cast member monta una produccion completa de sights, sounds, tastes, aromas y textures.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El tema en su propuesta de 1953: 'A place for people to find happiness and knowledge.' Encontro financiamiento rapido y abrio en menos de 2 anios.</p></div>
+</div>
+</li>
+<li><span>Las experiencias son inherentemente personales: ninguna dos personas tienen la misma</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Las experiencias ocurren DENTRO del individuo que ha sido engaged a nivel emocional, fisico, intelectual o espiritual. El valor persiste como recuerdo.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Each experience derives from the interaction between the staged event and the individual's prior state of mind and being.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Estudios de Cornell: 'buying experiences makes people happier, with a greater sense of well-being, than purchasing goods.'</p></div>
+</div>
+</li>
+<li><span>Build-A-Bear: 8 estaciones transforman la compra en evento memorable</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Las 8 estaciones: Choose Me, Hear Me, Stuff Me, Stitch Me, Fluff Me, Name Me, Dress Me, Take Me Home. Cada una es un 'ing' secuencial.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Fundadora Maxine Clark fue influenciada directamente por el articulo HBR de Pine &amp; Gilmore (1998). Hoy opera ~500 venues worldwide.</p></div>
+</div>
+</li>
+<li><span>'Ing the thing': pensar en gerundios revela experiencias latentes</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>JoAnn Fabrics reemplazo 'Can I help you?' por 'What are you working on?' y los clientes hablaron entusiasmados de sus proyectos.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Ing Two = palabras nuevas: zorbing, topgolfing, cross-golfing, noboarding. Experiencias new-to-the-world.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Duck Tape: 20 colores, Stuck on Prom contest (becas), Avon Heritage Duct Tape Festival. Sensorializar, formar club, hacer scarce, staging events.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"When a person buys a service, he purchases a set of intangible activities carried out on his behalf. But when he buys an experience, he pays to spend time enjoying a series of memorable events that a company stages to engage him in an inherently personal way."</div>
+<div class="chapter-quote quote-translation">"Cuando una persona compra un servicio, adquiere un conjunto de actividades intangibles realizadas en su nombre. Pero cuando compra una experiencia, paga por pasar tiempo disfrutando de una serie de eventos memorables que una empresa pone en escena para involucrarlo de manera inherentemente personal."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Our business is the delivery of information and lifelike interactive experiences."</em> &mdash; Andrew Grove (Intel)</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"The labour of the meanest of these has a certain value... the work of all of them perishes in the very instant of its production."</em> &mdash; Adam Smith</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Was the coffee worth it? Assolutamente!"</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"You never forget where you parked!"</em> &mdash; sobre Standard Parking O'Hare</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch02 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 2</div>
+<div>
+<div class="chapter-title">Setting the Stage</div>
+<div class="chapter-tagline">Poner en escena experiencias no es entretener: es involucrar.</div>
+<p class="chapter-summary">Las experiencias se organizan en cuatro reinos definidos por participacion y conexion. Las mas ricas combinan los cuatro en el sweet spot central, transformando espacio generico en lugar memorable.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los dos ejes: participacion pasiva (symphony goers) a activa (skiers); conexion por absorcion (TV) a inmersion (VR). La combinacion produce cuatro reinos.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Keukenhof combina 16K variedades de flores (estetico), 15km de senderos y laberinto (escapista), senalizacion horticola (educativo) y shows de agua (entretenimiento). 70 acres, 6 millones de bulbos plantados a mano.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Real fake (CityWalk reconoce artificio: guests ven backs de fachadas al llegar) vs fake fake (Disney oculta todo: Mickey nunca se quita la mascara). La consistencia interna es lo que importa.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Seis combinaciones: edutainment, eduscapist, edusthetic, escasthetic, entersthetic, escatainment. Cada una mapea territory for understanding engagement.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El framework no es prescriptivo sino diagnostico: la mayoria de experiencias cruzan boundaries entre reinos.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Cuatro reinos: Entertainment, Educational, Escapist, Esthetic</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Entertainment: pasivo + absorcion, forma mas antigua. Confundir toda experiencia con entertainment es el error mas comun.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Educational: activo + absorcion. 'To truly inform people, educational events must actively engage the mind or the body.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Escapist: activo + inmersion. Polo opuesto de entertainment. 'You've seen the movie, now experience the ride!'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Esthetic: pasivo + inmersion. El guest simplemente quiere 'ser.' Cabela's: montana de 35 pies, 700 animales taxidermicos, 1M+ visitantes/anio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Kentucky Derby: grandstand = absorcion; infield = inmersion. Mismo evento, distintos reinos segun donde estes.</p></div>
+</div>
+</li>
+<li><span>El sweet spot transforma espacio generico en lugar distintivo y mnemonico</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'A mnemonic place, a tool aiding in the creation of memories, distinct from the normally uneventful world of goods and services.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>4 design questions: Que haria que quieran 'estar'? (esthetic). 'Hacer'? (escapist). 'Aprender'? (educational). 'Disfrutar'? (entertainment).</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Contraste con fast-food: los clientes QUIEREN pasar menos tiempo con providers. En un sweet spot, QUIEREN pasar mas.</p></div>
+</div>
+</li>
+<li><span>Real fake vs fake fake: un entorno debe ser true to itself</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>CityWalk: 'controlled exaggeration abounds.' Guitarra de 4 pisos en Hard Rock. Reconoce su artificio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Disney: 'seeks to hide all things fake. Parking lots smoothly flow into shuttle buses.' No importa cual elijas, sino la consistencia.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Benedikt: 'in our media-saturated times it falls to architecture to have the direct esthetic experience of the real at the center of its concerns.'</p></div>
+</div>
+</li>
+<li><span>Internet es medio activo: 'interactive entertainment is an oxymoron'</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>AOL gano a Prodigy y CompuServe: 5 screen names, chat rooms, buddy lists. &gt;25% de 40 millones de horas en chat rooms.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Anticipo toda la era de social media: MySpace, Facebook, Twitter. Todos inherentemente activos e inmersivos (escapist).</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Digital fatigue crea demanda de analog premium. Starbucks como third place fisico para la era digital.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Staging experiences is not about entertaining customers; it's about engaging them."</div>
+<div class="chapter-quote quote-translation">"Poner en escena experiencias no se trata de entretener a los clientes; se trata de involucrarlos."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Interactive entertainment is an oxymoron."</em> &mdash; Pine &amp; Gilmore</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"We're selling an experience."</em> &mdash; Dick Cabela</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Those partaking of an esthetic experience just want to be."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Competition for the retail dollar demands that we create a rich retail theatre that turns products into experiences."</em> &mdash; Henry Beer</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch03 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 3</div>
+<div>
+<div class="chapter-title">The Show Must Go On</div>
+<div class="chapter-tagline">Eres lo que cobras.</div>
+<p class="chapter-summary">Cinco principios THEME-ing guian el diseno operativo de experiencias, y el criterio definitivo para estar en el negocio de experiencias es cobrar explicitamente por el tiempo del cliente.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los cinco principios son secuenciales: primero el tema, luego impresiones, cues, memorabilia y sentidos. Sin tema, los demas flotan sin anclaje.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Theme vs motif: Geek Squad motif = law enforcement visual. Tema = 'comedy with a straight face.' El motif es solo el medio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Joie de Vivre: Chip Conley compro motel en el peor barrio de SF, eligio Rolling Stone, extrajo 5 impresiones, rediseno todo. Favorito de touring bands SIN revelar el tema.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Seis admission fees: entry, per-event, per-period, initiation, access, membership. Netflix cobra por TIEMPO, no por SERVICIO.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'You are what you charge for' tiene consecuencia radical: Brookstone pierde el valor que crea. Niketown degenero en 'houses of merchandise.'</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>THEME-ing: Theme, Harmonize, Eliminate, Mix memorabilia, Engage senses</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Theme debe ser conciso: 'A place for people to find happiness and knowledge.' No es mission statement ni tagline. 'Its presence must be clearly felt.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Harmonize: Carbone divide en 'mechanics' (inanimate) y 'humanics' (animate). Disney: trash siempre a la vista + cast members smilen a 10 feet.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Eliminate: letrero 'this chair reclines' = mal diseno. Mejor: silla reclinada al llegar. Ed Debevic's: cues negativos SON el tema.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Memorabilia: Hard Rock T-shirts. Ritz-Carlton doorknobs convertidos en paperweights (463 entregados). 'If banks find no demand for memorabilia, it's because they do not offer anything anyone wants to remember.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Senses: la mist del Rainforest Cafe activa los 5 secuencialmente. Cleveland ilumino 8 puentes por $4M &mdash; un solo sentido puede crear experiencia nocturna.</p></div>
+</div>
+</li>
+<li><span>Theme vs motif: el tema subyacente es mas abstracto que su manifestacion visual</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Geek Squad: motif de law enforcement pero tema de 'comedy with a straight face.' Escalo de 12 a 24K+ agentes.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Library Hotel NYC: Dewey Decimal System. 10 pisos = 10 categorias. Room 700.003 = Performing Arts con libros y artwork inspirado.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>5 principios del tema: alterar sentido de realidad, afectar espacio+materia+tiempo, integrar en todo cohesivo, crear multiples lugares, encajar con caracter de empresa.</p></div>
+</div>
+</li>
+<li><span>Seis formas de admission: entry, per-event, per-period, initiation, access, membership</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Netflix: unlimited viewing por monthly fee. Trata nuevas plataformas como ahorro, no amenaza. Destruyo Blockbuster.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>YOtel cobra por hora de hotel cabin. Hotels que requieren check-out por hora 'embrace a service mindset.' Day rate = experience mindset.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Apple One to One ($99/anio membership): ya genera experience-based revenue dentro de stores.</p></div>
+</div>
+</li>
+<li><span>'You are what you charge for' &mdash; si no cobras admission, no estas en experiencias</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Brookstone: gente juega con gadgets y se va sin pagar. Sin admission, pierde el valor que crea.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Niketown: tenia basketball courts, educational videos, immersive experiences. Todo desaparecio. 'Houses of merchandise.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Leccion historica: toda transicion consiste en cobrar por lo que antes era gratis. Cobrar admission es solo el proximo paso inevitable.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"You are what you charge for."</div>
+<div class="chapter-quote quote-translation">"Eres lo que cobras."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"A poorly conceived theme gives customers nothing around which to organize their impressions. An incoherent theme is like Gertrude Stein's Oakland: 'There is no there there.'"</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"If banks find no demand for memorabilia, it's because they do not offer anything anyone wants to remember."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Your experience will never be worth an admission fee until you explore how to stop giving it away for free."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"There's no business that's not show business."</em> &mdash; Barry Tatelman</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch04 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 4</div>
+<div>
+<div class="chapter-title">Get Your Act Together</div>
+<div class="chapter-tagline">Los clientes no quieren opciones; quieren exactamente lo que quieren.</div>
+<p class="chapter-summary">La customizacion automaticamente eleva ofertas: customizar un bien lo convierte en servicio, customizar un servicio lo convierte en experiencia. Requiere arquitectura modular y ambiental.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El principio de automatic shifting: Dell customiza bienes y el resultado adquiere caracteristicas de servicio. Progressive customiza servicios y el resultado se convierte en experiencia.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Mass Customization combina eficiencia y personalizacion mediante modularidad &mdash; como LEGOs: piezas estandar combinables infinitamente.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La arquitectura ambiental (design tool + designed interaction) es tan crucial como la modular. Andersen Corp. demostro que la herramienta sola no basta.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Customer sacrifice es la innovacion intelectual clave: la satisfaccion mide expectativas condicionadas; el sacrificio mide la brecha real.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Dell: Mass Customization con cash conversion cycle de -36 dias</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Negative working capital: clientes pagan antes de recibir, proveedores cobran despues. Pero fallo en crear sequel para servicios &mdash; commoditizado por Apple Stores.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Aplica distinciones goods/services: Dell customiza para individuos, entrega on demand, ayuda a determinar necesidades. 'Selling PCs, customized and on demand, means delivering a service.'</p></div>
+</div>
+</li>
+<li><span>Customer sacrifice vs satisfaction: el sacrificio mide la brecha real</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Coca/Pepsi en avion: la aerolinea entrena al cliente a pedir lo que no quiere. 'Another satisfied customer because he always receives what he expects.' Pero el sacrificio es invisible.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>TQM puede SUBIR sacrificio: features para el promedio son features que algun individuo no quiere pero paga.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Designing for the average is the root cause of customer sacrifice.' El cliente promedio no existe.</p></div>
+</div>
+</li>
+<li><span>Tres enfoques de designed interaction: full disclosure, progressive, concealed</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Full disclosure: revelar todas combinaciones. Progressive: configurador paso a paso (Dell). Concealed: CEMEX/GINCO opera invisible.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Andersen: distribuidores entrenados vendieron +20%; los no entrenados perdieron ventas. La interaccion humana mediada es crucial.</p></div>
+</div>
+</li>
+<li><span>Variedad no es customizacion: variedad anticipa demanda incierta</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Variety means producing choices in the hope that some customer will come along. Customization means producing in response to a particular customer's desires.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>50K SKUs en supermercado no es customizacion. Es producir opciones con la esperanza de que alguien las compre.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Customers do not want choice; they just want exactly what they want."</div>
+<div class="chapter-quote quote-translation">"Los clientes no quieren opciones; solo quieren exactamente lo que quieren."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"The easiest way to turn a service into an experience is to provide poor service, thus creating a memorable encounter of the most unpleasant kind."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Companies should charge for the value they add and not the costs they incur."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Designing for the average is the root cause of customer sacrifice."</em></p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch05 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 5</div>
+<div>
+<div class="chapter-title">Experiencing Less Sacrifice</div>
+<div class="chapter-tagline">Cada cliente es unico y merece exactamente lo que quiere.</div>
+<p class="chapter-summary">Cuatro tipos de sacrificio (either-or, sort-through, form-of, repeat-again) se resuelven con cuatro enfoques de customizacion, cada uno generando un tipo distinto de experiencia.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Taxonomia 2x2: cambiar o no el PRODUCTO y cambiar o no la REPRESENTACION genera collaborative, adaptive, cosmetic y transparent.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Cada tipo genera experiencia distinta: exploring (Paris Miki), experimenting (Lutron), gratifying (Hertz), discovering (Ritz-Carlton).</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La learning relationship baja sacrificio con cada interaccion, creando switching costs naturales basados en valor acumulado.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>5 beneficios: premium prices, reduced discounts, greater revenue/customer, higher customer count, increased retention.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Collaborative: exploracion (Paris Miki co-disena lentes en 1 hora)</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Paris Miki: foto digital del rostro + adjetivos + recomendacion que cliente y optico refinan con mouse. Lentes listos en 1 hora.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Build-A-Bear: el proceso de elegir, rellenar, pedir deseo y vestir crea conexion emocional &mdash; 'they become friends for life.'</p></div>
+</div>
+</li>
+<li><span>Adaptive: experimentacion (Lutron GRAFIK Eye, Select Comfort)</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Lutron: 'Creating adaptive controls differentiates us. Customers easily and enjoyably figure out the settings right for them.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Select Comfort: colchones con camaras de aire ajustables. Parejas pueden tener niveles diferentes.</p></div>
+</div>
+</li>
+<li><span>Cosmetic: gratificacion (Hertz Gold cuesta MENOS que servicio estandar)</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Hertz #1 Club Gold: nombre en luces, auto pre-calentado. 'Each instance of customized packaging clearly shows that the company values the customer.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Whirlpool Quality Express: conductores uniformados descajonan, reconfiguran puertas, instalan antes de closings hipotecarios.</p></div>
+</div>
+</li>
+<li><span>Transparent: descubrimiento (Ritz-Carlton observa sin preguntar)</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>ChemStation: formula unica para cada cliente, mismo tanque. 'We want them to discover the value as they're using the soap.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Ritz-Carlton observa preferencias y las replica sin preguntar. Crea 'mystique' &mdash; mejor sin que el cliente sepa por que.</p></div>
+</div>
+</li>
+<li><span>Learning relationships crean switching costs naturales (Amazon, Ross Controls)</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Amazon: aprende nombre, direcciones, tarjetas, historial, collaborative filtering, deseleccion de anomalias. Cada interaccion baja sacrificio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Ross Controls: una division de $20 mil millones de GM 'won't buy from anyone else.' El competidor esta generaciones atras.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Sometimes, customers are so accustomed to current conditions that they don't think to ask for a new solution &mdash; even if they have real needs."</div>
+<div class="chapter-quote quote-translation">"A veces, los clientes estan tan acostumbrados que no piensan en pedir una nueva solucion &mdash; incluso si tienen necesidades reales."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"No longer should customers settle for standardized goods when companies can deliver only and exactly what each customer desires."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"When guests pick out exactly the right stuffed animal... they become friends for life."</em> &mdash; Maxine Clark</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"We want them to discover the value we provide as they're using the soap, not think about what it is or how it gets there."</em> &mdash; George Homan</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch05i ========== -->
+<div class="part-divider"><div class="part-label">Intermission</div><div class="part-title">Una Experiencia Refrescante</div></div>
+<div class="chapter-card">
+<div class="chapter-num">Inter-<br>mision</div>
+<div>
+<div class="chapter-title">A Refreshing Experience</div>
+<div class="chapter-tagline">La sorpresa crea el recuerdo; el suspense crea anticipacion del proximo.</div>
+<p class="chapter-summary">El modelo 4-S (Satisfaction, Sacrifice, Surprise, Suspense) es piramidal. Las experiencias memorables requieren ir mas alla de satisfaccion y sacrificio para crear sorpresa genuina y anticipacion.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Satisfaccion es la base; sacrificio es el segundo nivel; sorpresa es el tercero; suspense el cuarto. Cada nivel requiere los anteriores.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Sorpresa no es superar expectativas (mejora incremental en eje conocido) sino ir a direccion completamente inesperada fuera del dominio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Romano: comidas gratis costaron 3.3% del gross con mayor impacto que publicidad equivalente o descuento uniforme.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Formula: Customer Suspense = What customer does not yet know &minus; What customer remembers from past.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Philip Romano y la economia de la sorpresa &mdash; Macaroni's</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Una carta llegaba en lugar de la cuenta: 'how awkward it seemed to charge guests for a meal.' La aleatoriedad y el momento multiplicaron el impacto.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Costo ~3.3% del gross mensual. Un descuento del 3.3% repartido uniformemente seria invisible. La sorpresa creo deseo y obligacion de volver.</p></div>
+</div>
+</li>
+<li><span>Aaron Davis y el Reverend Jim &mdash; sorpresa fuera del dominio funcional</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Davis: quema hilos sueltos con encendedor, sube calcetines, ofrece proverbios. Nada tiene que ver con lustrar zapatos.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Rev. Jim: sandwiches, repartee, Sinatra por intercom. Un pasajero pidio dar otra vuelta a la manzana &mdash; pago mas por 'demonstrably poorer service.'</p></div>
+</div>
+</li>
+<li><span>Suspense como evolucion inevitable de la sorpresa</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Continental Airlines: kit de premier flyer fue sorpresa anio 1, tedioso anio 5. Solucion: cambiar contenido cada anio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El suspense crea loop de retencion: el cliente QUIERE mantener estatus para descubrir que vendra en el proximo paquete.</p></div>
+</div>
+</li>
+<li><span>Rebates y frequent purchase programs commoditizan por expectativa</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Fatal flaw: ensenan a esperar gratis. Clientes se unen a multiples programas. No se sienten comprometidos.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Alternativa: cada articulo #15 o #20 gratis aleatoriamente. Mismo dinero, estructura psicologica radicalmente diferente.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Rebates assume a one-period model in a multi-period world; surprise programs always help influence the next decision.'</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Experience stagers must constantly refresh their experiences &mdash; change or add elements that keep the offering new, exciting, and worth paying money to experience all over again."</div>
+<div class="chapter-quote quote-translation">"Los staggers de experiencias deben refrescar constantemente &mdash; cambiar o agregar elementos que mantengan la oferta nueva, emocionante, y por la que valga la pena pagar."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"So engaging was Iggy's use of customer surprise that the experience of being in his cab yielded greater value than the service of being transported from point A to point B."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"They make memories (and not goods) and create the stage for generating greater economic value (and not deliver services)."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Customer Suspense = What customer does not yet know &minus; What customer remembers from past"</em></p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch06 ========== -->
+<div class="part-divider"><div class="part-label">Acto III</div><div class="part-title">Work Is Theatre</div></div>
+<div class="chapter-card">
+<div class="chapter-num">Cap. 6</div>
+<div>
+<div class="chapter-title">Work Is Theatre</div>
+<div class="chapter-tagline">No es metafora sino modelo operativo.</div>
+<p class="chapter-summary">Toda actividad laboral visible es un acto teatral. El modelo de Schechner traduce drama=estrategia, script=procesos, theatre=trabajo, performance=oferta. La intencion ('in order to') transforma cualquier actividad.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Pine &amp; Gilmore rechazan 'mismanagement-by-metaphor.' La palabra drama viene del griego drao = simplemente 'hacer.' Todo trabajo visible es acto teatral.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Modelo de Schechner: cuatro capas concentricas donde cada capa contiene a la anterior. Drama del estratega, script del manager, theatre de performers, performance de la audiencia.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Freytag: 7 etapas &mdash; exposition, inciting incident, rising action, crisis, climax, falling action, denouement. Estructura plana = sin engagement.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Goffman: performers 'sinceros' vs 'cinicos.' El control expresivo deliberado NO es falsedad. 'It is the act of acting that differentiates memorable experiences from ordinary activity.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Herramienta 'in order to': Streisand masca chicle IN ORDER TO demostrar que las apariencias no importan. Sin 'in order to', el trabajo carece de potencial engaging.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Barb en U Penn: tomo tarjeta IN ORDER TO aprender nombre, IN ORDER TO saludarlo, IN ORDER TO preguntar por ausencia, IN ORDER TO informar donde estaba un amigo. 'One of the greatest welcomers ever to grace the globe.'</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>El modelo de Schechner: drama, script, theatre, performance</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Drama: 'a written text, score, scenario, plan or map.' En negocios = estrategia. Komatsu: 'Beat Caterpillar!'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Script: 'the basic code of events that pre-exists any given enactment.' En negocios = procesos codificados.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Theatre: 'what the performers actually do during production.' Encarna funcion Y forma.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Performance: 'the whole constellation of events from the time the first spectator enters to the time the last spectator leaves.'</p></div>
+</div>
+</li>
+<li><span>Aristoteles, Freytag y la estructura dramatica del trabajo</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Aristoteles: eleccion, secuencia/progresion/duracion, ritmo/tempo. FedEx employees 'deliberately rush about to convey the impression of speed.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Starbucks round delivery shelf MEJORA la experiencia: el frenzy anade rising action y crisis antes del climax.</p></div>
+</div>
+</li>
+<li><span>Characterization: el personaje se conforma al self, no al reves</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Eric Morris (coach de Nicholson): 'the character becomes you!' Extrae unicidad emocional, fisica, intelectual y espiritual del trabajador.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Magic If de Stanislavski: actua as if estas alegre. 'A funny thing happens: cheerful service presents the stage for memorable experiences.'</p></div>
+</div>
+</li>
+<li><span>La intencion ('in order to') como nucleo de la actuacion</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Stanislavski: 'cut 95%.' Rachmaninov: 'Not touching the neighboring key.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Un knock en la puerta cambia radicalmente segun la intencion. Cada intencion 'calls for a decidedly different knock.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Caso medico: tasas de lumpectomy no cambiaron a pesar de leyes &mdash; 'it's not just what the doctor says, but how it's said.'</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Work is theatre. Think about it. Pause. Reflect. And now say it aloud: Work is theatre."</div>
+<div class="chapter-quote quote-translation">"El trabajo es teatro. Piensalo. Pausa. Reflexiona. Y ahora dilo en voz alta: el trabajo es teatro."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"I can take any empty space and call it a bare stage. A man walks across this empty space whilst someone else is watching him, and this is all that is needed for an act of theatre."</em> &mdash; Peter Brook</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"We all act better than we know how."</em> &mdash; Erving Goffman</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Not touching the neighboring key."</em> &mdash; Rachmaninov</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"She mesmerized 'em."</em> &mdash; Michael Shurtleff sobre la audicion de Streisand</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch07 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 7</div>
+<div>
+<div class="chapter-title">Performing to Form</div>
+<div class="chapter-tagline">Street theatre equivale a Mass Customization.</div>
+<p class="chapter-summary">Cuatro formas de teatro determinadas por estabilidad del script y de la performance: Improv, Platform, Matching, Street. Street theatre equivale a Mass Customization: bits estandarizados llamados on demand.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Framework 2x2: script change (stable/dynamic) x performance change (stable/dynamic). No son preferencias estilisticas sino determinadas por la naturaleza de la oferta.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Linda ejecuta las 4 formas en un dia: Improv con Paul, Platform ante proveedores, Matching en reunion estrategica, Street vendiendo PLEASE al dealer.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Street theatre = Mass Customization: los bits del street performer son modulos estandarizados; la performance es la oferta customizada.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El ciclo de vida de un bit: nace en Improv, se practica en Platform, se refina en Matching, se incorpora al repertorio de Street.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Commedia dell'arte italiana del siglo XVI: stock characters improvisaban desde un 'scenario.' Desarrollaron lazzi &mdash; bits probados y repetibles. El termino 'slapstick' viene de un lazzo.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Improv: script y performance dinamicos &mdash; crear valor de algo nuevo</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Improv NO es free association: 'requires systematic and deliberate methods.' Tecnicas: gibberish, pantomima, props random, mascaras.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>De Bono: 'random words' fuerzan conexiones nuevas. Tortuga &rarr; 'maybe our ad campaign is a shell.'</p></div>
+</div>
+</li>
+<li><span>Platform: ambos estables &mdash; duplicar un best way una y otra vez</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Lo tan ensayado que parece espontaneo. Un asistente confirmo que ha visto el mismo speech de Linda media docena de veces. El proveedor dijo 'Wow.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Dick Clark cobra $150K-$10M por eventos corporativos. CFOs toman lecciones de actuacion para quarterly discussions.</p></div>
+</div>
+</li>
+<li><span>Matching: script dinamico, performance estable &mdash; integrar como film editor</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>En cine: piezar tomas de tiempos y lugares diferentes. En negocios: continuous improvement linkando actividades en proceso seamless.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Team selling: non-speakers deben matchear con speakers. 'A nodding head, an attentive look' refuerzan al speaker.</p></div>
+</div>
+</li>
+<li><span>Street: script estable, performance dinamica &mdash; mass customization del acto</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Tony Vera: circulo de tiza, props, seleccion on the fly. 'All I have to do is step into that circle and my crowd starts to develop. It's magic.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>The Hartford: generalists + specialists. 'Each response, while seemingly spontaneous, is really a pre-engineered routine.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Manejo de disrupciones: Vera esperaba alarma de incendios, daba antorcha a alguien del publico y se iba. 'Phenomenally spontaneous.'</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"The foundation of film art is editing."</div>
+<div class="chapter-quote quote-translation">"El fundamento del arte cinematografico es la edicion."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"All I have to do is step into that circle and my crowd starts to develop. It happens by itself. It's magic."</em> &mdash; Tony Vera</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"No two phone calls are exactly alike... we designed a system where each response, while seemingly spontaneous, is really a pre-engineered routine."</em> &mdash; Hugh Martin</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Who cares who makes the car? That's just a prop for the driving experience."</em> &mdash; Linda</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch08 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 8</div>
+<div>
+<div class="chapter-title">Now Act Your Part</div>
+<div class="chapter-tagline">Cada cosa que ve la audiencia es una eleccion.</div>
+<p class="chapter-summary">El Performance Model traduce el teatro a la organizacion empresarial con siete roles de soporte. HR debe convertirse en casting director con audiciones reales.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Performance Model: cast=people, roles=responsibilities, characterizations=representations, ensemble=organization. Star turn = 'playing politics.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Siete roles: productor, director, dramaturg, scriptwriter, tecnicos, stage crew, casting director.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Reagan: puertas abiertas, pasillo rojo, hop al podio &mdash; 'vigor, authority, ease' ANTES de hablar. Requirio stage crew invisible.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Cuatro sondas del productor: anadir elementos experienciales, proveer recursos para otros stagers, redefinir experiencias gratis como for-fee, commoditizar competencia con experiencias nuevas.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Lucadello (mejor scout): 4 tipos &mdash; poor, pickers, performance-based, projectors. Solo projectors ven talento crudo independiente de la audicion.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>El director: fusion rara de colaboracion y comando</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Accountability por todo en escenario. 3 habilidades: motivacionales, interpretativas, de storytelling.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Stories enhance attention, create anticipation, increase retention.' &mdash; Peter Orton (IBM, ex Hollywood)</p></div>
+</div>
+</li>
+<li><span>El dramaturg: describir y NO prescribir</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Directores que permiten al dramaturg migrar a su rol debilitan su autoridad, y todo el ensemble lo sabe.</p></div>
+</div>
+</li>
+<li><span>Scriptwriting como acto creativo vinculado a estrategia</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>LensCrafters trajo manufactura al punto de venta. Dell crecio a $60B via scriptwriting de Mass Customization.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Hammer: 'Don't automate, obliterate.' Hamel y Prahalad: reinventar industrias enteras.</p></div>
+</div>
+</li>
+<li><span>Technicians: set designers, prop managers, costume designers</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Walt Disney rechazaba arboles 'out of character.' Cada elemento debe servir al tema.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Southwest Airlines abandono garb tradicional por vestimenta casual: 'We're perky!' UPS: reconocimiento inmediato por uniforme marron.</p></div>
+</div>
+</li>
+<li><span>Casting: audiciones reales, las 4 P's de Lucadello</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Disney Casting Center disenado por Stern: procesion arquitectonica por murales que cuentan la historia de trabajar en Disney.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Lucadello: projectors evaluan si el actor tiene habilidades para actuar excepcionalmente una vez casteado, independiente de la audicion.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"In the theater, every single thing that is viewed by the audience is a choice, down to the buttons on a character's costume."</div>
+<div class="chapter-quote quote-translation">"En el teatro, cada cosa que ve la audiencia es una eleccion, hasta los botones del vestuario de un personaje."</div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch09 ========== -->
+<div class="part-divider"><div class="part-label">Acto IV</div><div class="part-title">La Economia de las Transformaciones</div></div>
+<div class="chapter-card">
+<div class="chapter-num">Cap. 9</div>
+<div>
+<div class="chapter-title">The Customer Is the Product</div>
+<div class="chapter-tagline">Cambienme.</div>
+<p class="chapter-summary">Las transformaciones son la quinta oferta economica. El comprador es un aspirante que busca ser alguien diferente. La empresa no ofrece materiales ni procesos ni encounters &mdash; ofrece al individuo transformado.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Distinciones: commodities fungibles, goods tangibles, services intangibles, experiences memorables, transformations effectuales. El comprador pasa de market a user a client a guest a aspirant.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>El mecanismo es identico: customizar experiencias las convierte automaticamente en transformaciones. El patron es fractal en toda la Progression.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'The customer IS the product' tiene consecuencia radical: la oferta no existe fuera del individuo transformado.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Economic Pyramid: cada nivel se construye sobre los anteriores. Transformation elicitors necesitan todas las capas inferiores.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Tres fases (diagnose, stage, follow through) no son opcionales. Sin alguna, no hay transformacion real.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Insure (servicio) &rarr; Assure (experiencia) &rarr; Ensure (transformacion)</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Insure: aseguradora paga en evento de loss. Assure: Progressive IRV + cheque inmediato crean confianza. Ensure: Safeco Teensurance transforma teenagers en mejores conductores.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Achmea (Holanda): de aseguradora a 'health company' con centros de salud, web medica, programas de wellness.</p></div>
+</div>
+</li>
+<li><span>Mid-Columbia Medical Center: cinco modos de sanacion holistica</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Biologico (IMRT state-of-the-art), Social (jardines + eventos), Intelectual (biblioteca medica completa), Ambiental (Cascade Mountains), Espiritual (sala de meditacion + laberinto).</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Un tercio del espacio dedicado a lugares 'no funcionales.' Musica de arpa, clases de relajacion, masajes.</p></div>
+</div>
+</li>
+<li><span>CCA y Bidwell: transformacion en contextos de second chances</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>CCA: Doctor Crants reconocio que 20% (psicopatas/sociopatas) no pueden ser transformados. Para el resto, la esperanza es costo-efectiva.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Bidwell: Bill Strickland &mdash; 'They're human beings now capable of participating in the environment in an effective way. That's a product.'</p></div>
+</div>
+</li>
+<li><span>GlaxoSmithKline: de goods manufacturer a transformation elicitor</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Committed Quitters: diagnostico telefonico, mailers customizados, follow-up multicanal. 50% mayor probabilidad de dejar de fumar.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los aspirantes compraron MAS goods de GSK. La transformacion impulsa, no reemplaza, ofertas inferiores de la piramide.</p></div>
+</div>
+</li>
+<li><span>Caring (Mayeroff) y worldview segmentation como fundamentos</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Mayeroff: caring = 'helping another grow and actualize himself.' Caring se describe con: knowing, patience, honesty, trust, humility, hope, rhythm, courage.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Pollard cita tres filosofos: Socrates ('Know thyself'), Aristoteles ('Control thyself'), Jesus ('Give thyself').</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>En Transformation Economy, la cosmovision del transformador sera parte explicita de la propuesta de valor. 'All commerce involves moral choice.'</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"The customer is the product!"</div>
+<div class="chapter-quote quote-translation">"El cliente es el producto."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"The experiences we have affect who we are, what we can accomplish, and where we are going, and we increasingly ask companies to stage experiences that change us."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"We're not in the education business. We're in the transformation business."</em> &mdash; John Quelch (London Business School)</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Fix my kid."</em> &mdash; Lo que dicen padres en artes marciales</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Been there, done that."</em> &mdash; La commoditizacion de experiencias</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch10 ========== -->
+<div class="chapter-card">
+<div class="chapter-num">Cap. 10</div>
+<div>
+<div class="chapter-title">Finding Your Role in the World</div>
+<div class="chapter-tagline">En que negocio estas realmente?</div>
+<p class="chapter-summary">Las transformaciones lideran crecimiento economico (9.2% CAGR). La Progression of Valuable Intelligence es paralela a la de valor economico. Cada empresa debe definir su rol con base en lo que cobra.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Datos 1959-2009: transformaciones 9.2% CAGR empleo y 7.5% GDP nominal. La inflacion de healthcare es realmente apreciacion de valor transformacional.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Progression of Valuable Intelligence: noise &rarr; data &rarr; information &rarr; knowledge &rarr; wisdom. Cada nivel corresponde con un nivel economico.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Sabiduria es experiencial: resulta de experiencias (a menudo dolorosas) y es necesaria para guiar transformaciones. Dalla Costa: empresas ven sufrimiento como algo a evitar, pero es ingrediente clave.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'You are what you charge for': stuff=commodities, things=goods, activities=services, time=experiences, outcomes=transformations.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Nueva matriz competitiva: 5 ofertas x 4 elementos de trabajo (origination, execution, correction, application). Un relapse no es fracaso sino oportunidad de fortalecer resolucion.</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>La Progression of Valuable Intelligence como espejo de la economica</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>5 niveles: noise (ubicuo), data (codificado), information (comunicada), knowledge (experiencial), wisdom (juiciosa). La disponibilidad disminuye pero la sustancialidad aumenta.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Nothing is more important, more abiding, or more wealth-creating than the wisdom required to transform customers.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Cada transicion terminologica refleja el shift: 'data processing' &rarr; 'information technology' &rarr; 'knowledge management' &rarr; wisdom (aun sin nombrar).</p></div>
+</div>
+</li>
+<li><span>Priority Management, Celerant y Starizon: modelos de cobrar por transformaciones</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Priority Management: garantia &mdash; si no cumple metas, no paga. &gt;95% continuan. Wangen: 'I redouble my efforts to make sure he gets the results.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Celerant: 'Changing business for good.' Pone fees at risk atados a performance benchmarks.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Starizon: 25% at risk con 'transformational guarantee.' Clientes pagan todo, nada, o cualquier punto intermedio.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Contraste brutal: consultores tipicos cobran por horas-hombre y PowerPoint decks, no por resultados.</p></div>
+</div>
+</li>
+<li><span>Cuatro elementos universales de trabajo: origination, execution, correction, application</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Origination: valor de algo NUEVO. Execution: valor de algo HECHO. Correction: valor de algo MEJORADO. Application: valor de algo USADO.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>En transformaciones: correction = un relapse triggers stronger resolve. Application = persevering connects with aspirants.</p></div>
+</div>
+</li>
+<li><span>El director como rol del transformation elicitor</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>En experiencias, empleados son actores. En transformaciones, el cliente se convierte en actor y la empresa en director.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Goffman: boot camp convierte performance cinica en sincera &mdash; la esencia de la transformacion.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>4 pasos: customizar, stage engaging experiences, furnish rehearsal places, direct the actors.</p></div>
+</div>
+</li>
+<li><span>Strategic intent y la busqueda de unicidad corporativa</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Hamel y Prahalad: strategic intent debe basarse en unicidad, no en fijacion con competidores. Diferenciacion es subproducto natural del autoexamen.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Not by competing for the future but by actively attaining that future.'</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"If you charge for the demonstrated outcome the customer achieves, then and only then are you in the transformations business."</div>
+<div class="chapter-quote quote-translation">"Si cobras por el resultado demostrado que el cliente alcanza, entonces y solo entonces estas en el negocio de las transformaciones."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Today, the only thing better than being in the business of staging experiences is being in the business of guiding transformations."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"The offering is not the wisdom itself; that is only a means. The offering is the changed individual. The customer is the product."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"The audience is the theatre's wellspring, its leading actor. This is not a metaphor, it is a historical fact."</em> &mdash; Harold Clurman</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Clients want some certainty. This shows them a commitment on our part."</em> &mdash; Gary Traylor (Celerant)</p></div>
+</div>
+</div>
+</div>
+
+<!-- ========== ch10e ========== -->
+<div class="part-divider"><div class="part-label">Encore</div><div class="part-title">Exit, Stage Right</div></div>
+<div class="chapter-card">
+<div class="chapter-num">Encore</div>
+<div>
+<div class="chapter-title">Exit, Stage Right</div>
+<div class="chapter-tagline">Todo comercio es eleccion moral; toda empresa glorifica algo.</div>
+<p class="chapter-summary">Las transformaciones son la quinta y ultima oferta porque resisten la commoditizacion (la relacion guia-guiado es unica) y no puede existir una sexta porque la perfeccion pertenece al dominio divino.</p>
+<button class="zoom-trigger">&#8853; Profundizar idea central</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los componentes procedimentales (diagnosticos, experiencias) pueden commoditizarse, pero la relacion unica entre guia y guiado &mdash; 'the tie that binds' &mdash; es irreplicable.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Cadena descendente: cada oferta es solo medio para la superior. Commodities para goods, goods para services, services para experiences, experiences para transformations.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Declaracion de cosmovision cristiana: la perfeccion seria la transformacion maxima, pero 'perfecting people falls not in the domain of human business but under the province of God.'</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Cosmovisiones rivales como diferenciadores: en la Transformation Economy, la cosmovision sera parte explicita de la propuesta de valor.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>La frase final es pragmatica: 'Your answer may or may not help you accept what is next, but it will certainly help guide what you do today.'</p></div>
+</div>
+<ul class="chapter-points">
+<li><span>Las transformaciones resisten la commoditizacion por la unicidad de la relacion</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Healthcare, universidades y consultoras enfrentan presion &mdash; pero lo que se abarata son procedimientos e informacion, no la transformacion en si.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Solo otra transformacion puede desplazar una existente: dirigida a otra dimension del yo o desde una cosmovision diferente.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'No one can commoditize the most important aspect: the unique relationship formed between the guided and the guide. It is the tie that binds.'</p></div>
+</div>
+</li>
+<li><span>La cadena descendente: cada oferta es solo medio para la siguiente</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Transformations are only temporal states for the eternalities they glorify.' Incluso una transformacion exitosa es pasajera.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Efesios 2:8-9: 'For by grace you have been saved through faith. This is not your own doing; it is the gift of God.' La gracia no es oferta economica.</p></div>
+</div>
+</li>
+<li><span>La dimension moral del comercio como conclusion del libro</span>
+<button class="zoom-trigger-inline">&#8853;</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'In doing so, they will glorify whatever they view as ultimate.' La glorificacion no es opcional &mdash; toda empresa glorifica algo.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Pregunta final: 'Who or what does your business glorify?' Inversion de la apertura sobre commoditizacion: abre con economia, cierra con etica.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>'Since all commerce is moral choice' disuelve la separacion entre negocio y moralidad.</p></div>
+</div>
+</li>
+</ul>
+<div class="bilingual-quote">
+<div class="chapter-quote quote-original">"Since all commerce is moral choice, every business is a stage for glorifying something."</div>
+<div class="chapter-quote quote-translation">"Como todo comercio es eleccion moral, toda empresa es un escenario para glorificar algo."</div>
+</div>
+<button class="add-quotes-btn">Ver mas citas</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"No one can commoditize the most important aspect of a transformation: the unique relationship formed between the guided and the guide."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Transformations are only temporal states for the eternalities they glorify."</em></p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p><em>"Your answer may or may not help you accept what is next, but it will certainly help guide what you do today."</em></p></div>
+</div>
+</div>
+</div>
+
+</div><!-- /chapters-grid -->
+</div>
+</section>
+
+<!-- ===== GLOSSARY ===== -->
+<section id="glossary">
+<div class="container">
+<div class="section-num">04</div>
+<h2>Glosario de <em>Conceptos</em></h2>
+<div class="glossary-grid">
+<div class="glossary-term"><div class="glossary-name">Progression of Economic Value</div><div class="glossary-def">Cinco niveles ascendentes: commodities (fungibles, extraidas), bienes (tangibles, fabricados), servicios (intangibles, entregados), experiencias (memorables, puestas en escena) y transformaciones (effectuales, guiadas). Cada nivel superior cobra mas y crea mas empleo.</div></div>
+<div class="glossary-term"><div class="glossary-name">Customer Sacrifice</div><div class="glossary-def">La brecha entre lo que un cliente acepta (settle for) y lo que realmente quiere. A diferencia de la satisfaccion, que mide expectativas condicionadas, el sacrificio mide la brecha real con el deseo genuino del cliente.</div></div>
+<div class="glossary-term"><div class="glossary-name">Mass Customization</div><div class="glossary-def">Servir eficientemente a cada cliente de forma unica, combinando bajo costo y personalizacion. Requiere arquitectura modular y ambiental. Customizar un bien lo convierte en servicio; customizar un servicio en experiencia.</div></div>
+<div class="glossary-term"><div class="glossary-name">THEME-ing</div><div class="glossary-def">Cinco principios: Theme (tema coherente), Harmonize impressions, Eliminate negative cues, Mix in memorabilia, Engage the five senses.</div></div>
+<div class="glossary-term"><div class="glossary-name">Four Realms of Experience</div><div class="glossary-def">Entertainment (pasivo-absorcion), Educational (activo-absorcion), Escapist (activo-inmersion), Esthetic (pasivo-inmersion). Las mas ricas combinan los cuatro en el sweet spot.</div></div>
+<div class="glossary-term"><div class="glossary-name">Sweet Spot</div><div class="glossary-def">Centro donde convergen los cuatro reinos, transformando espacio generico en lugar distintivo y mnemonico.</div></div>
+<div class="glossary-term"><div class="glossary-name">Admission Fee</div><div class="glossary-def">Cobro explicito por el tiempo del cliente en 6 formas: entry, per-event, per-period, initiation, access, membership. 'You are what you charge for.'</div></div>
+<div class="glossary-term"><div class="glossary-name">Work Is Theatre</div><div class="glossary-def">Modelo operativo: drama=estrategia, script=procesos, theatre=trabajo, performance=oferta. Toda actividad visible debe disenarse con intencion explicita.</div></div>
+<div class="glossary-term"><div class="glossary-name">Four Forms of Theatre</div><div class="glossary-def">Improv (ambos dinamicos), Platform (ambos estables), Matching (script dinamico, performance estable), Street (script estable, performance dinamica). Street = Mass Customization.</div></div>
+<div class="glossary-term"><div class="glossary-name">Transformation</div><div class="glossary-def">Quinta oferta donde el cliente es el producto. El aspirante dice 'cambienme.' Tres fases: diagnosticar aspiraciones, montar experiencias, dar seguimiento.</div></div>
+<div class="glossary-term"><div class="glossary-name">Learning Relationship</div><div class="glossary-def">Relacion que mejora con cada interaccion, bajando sacrificio. Crea switching costs naturales basados en valor acumulado, no en penalidades. Amazon es el paradigma.</div></div>
+<div class="glossary-term"><div class="glossary-name">Ing the Thing</div><div class="glossary-def">Pensar en gerundios para descubrir experiencias latentes. Ing One: experiencias dormidas en el lexico existente. Ing Two: palabras nuevas para experiencias new-to-the-world como zorbing.</div></div>
+<div class="glossary-term"><div class="glossary-name">3-S Model (4-S)</div><div class="glossary-def">Piramide: Satisfaction (como lo hicimos), Sacrifice (que quieres realmente), Surprise (que recuerdas), Suspense (que no sabes aun).</div></div>
+<div class="glossary-term"><div class="glossary-name">Performance Model</div><div class="glossary-def">Cast=people, roles=responsibilities, characterizations=representations, ensemble=organization. Incluye 7 roles de soporte: productor, director, dramaturg, scriptwriter, tecnicos, stage crew, casting director.</div></div>
+<div class="glossary-term"><div class="glossary-name">Aspirant</div><div class="glossary-def">Comprador de transformaciones que aspira a ser alguien diferente. A diferencia del market, user, client o guest, busca un cambio sostenido en si mismo.</div></div>
+<div class="glossary-term"><div class="glossary-name">Economic Pyramid</div><div class="glossary-def">Cada nivel se construye sobre los anteriores: transformaciones requieren experiencias, que requieren servicios, que requieren bienes, que requieren commodities.</div></div>
+</div>
+</div>
+</section>
+
+<!-- ===== QUOTES ===== -->
+<section id="quotes" class="dark">
+<div class="container">
+<div class="section-num" style="color:var(--accent-ochre)">05</div>
+<h2>Citas <em style="color:var(--accent-ochre)">Memorables</em></h2>
+<div class="quotes-grid">
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"When a person buys a service, he purchases a set of intangible activities carried out on his behalf. But when he buys an experience, he pays to spend time enjoying a series of memorable events that a company stages to engage him in an inherently personal way."</div><div class="pull-quote-text quote-translation">"Cuando una persona compra un servicio, adquiere actividades intangibles. Pero cuando compra una experiencia, paga por pasar tiempo disfrutando de eventos memorables que una empresa pone en escena para involucrarlo de manera inherentemente personal."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore &mdash; Definicion central</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"You are what you charge for."</div><div class="pull-quote-text quote-translation">"Eres lo que cobras."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"Work is theatre. Think about it. Pause. Reflect. And now say it aloud: Work is theatre."</div><div class="pull-quote-text quote-translation">"El trabajo es teatro. Piensalo. Pausa. Reflexiona. Y ahora dilo en voz alta: el trabajo es teatro."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"The customer is the product!"</div><div class="pull-quote-text quote-translation">"El cliente es el producto."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"Staging experiences is not about entertaining customers; it's about engaging them."</div><div class="pull-quote-text quote-translation">"Poner en escena experiencias no se trata de entretener; se trata de involucrar."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"Customers do not want choice; they just want exactly what they want."</div><div class="pull-quote-text quote-translation">"Los clientes no quieren opciones; solo quieren exactamente lo que quieren."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"No two people can have the same experience &mdash; period."</div><div class="pull-quote-text quote-translation">"Ninguna dos personas pueden tener la misma experiencia &mdash; punto."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"Since all commerce is moral choice, every business is a stage for glorifying something."</div><div class="pull-quote-text quote-translation">"Como todo comercio es eleccion moral, toda empresa es un escenario para glorificar algo."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore &mdash; Declaracion final</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"The history of all economic progress consists of charging a fee for what once was free."</div><div class="pull-quote-text quote-translation">"La historia de todo progreso economico consiste en cobrar por lo que antes era gratis."</div></div><div class="pull-quote-cite">Pine &amp; Gilmore</div></div>
+<div class="pull-quote"><div class="bilingual-quote"><div class="pull-quote-text quote-original">"I can take any empty space and call it a bare stage. A man walks across this empty space whilst someone else is watching him, and this is all that is needed for an act of theatre to be engaged."</div><div class="pull-quote-text quote-translation">"Puedo tomar cualquier espacio vacio y llamarlo un escenario desnudo. Un hombre camina mientras alguien lo observa, y eso es todo lo que se necesita para un acto de teatro."</div></div><div class="pull-quote-cite">Peter Brook</div></div>
+</div>
+</div>
+</section>
+
+<!-- ===== CRITIQUE ===== -->
+<section id="critique" class="dark">
+<div class="container">
+<div class="section-num" style="color:var(--accent-ochre)">06</div>
+<h2>Critica <em style="color:var(--accent-ochre)">Constructiva</em></h2>
+<p style="font-size:15px;color:rgba(245,241,234,.6);margin-bottom:32px;max-width:700px;">Esta critica busca fortalecer la comprension del libro, no descartarlo. Pine y Gilmore ofrecen un framework poderoso que ha influido a miles de empresas en dos decadas.</p>
+<div class="critique-grid">
+
+<div class="critique-item"><div class="critique-mark">01</div><div class="critique-content">
+<h4>Sesgo de seleccion en los ejemplos</h4>
+<p>Los casos de exito (Build-A-Bear, Apple Store, Geek Squad) se presentan sin examinar sistematicamente los fracasos.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Gateway y Dell retail se mencionan como fracasos pero se atribuyen exclusivamente a 'falta de apreciacion por experience design,' no a factores de mercado o timing.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>No se presenta analisis de tasas de exito/fracaso. Sin esa base, es imposible evaluar si la estrategia es robusta o funciona solo bajo condiciones especificas.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Steelman: son consultores, no academicos. Su proposito es inspirar y proveer herramientas, no demostrar causalidad estadistica.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Importa porque implementar sin entender condiciones de exito puede producir fracasos silenciosos.</p></div>
+</div>
+</div></div>
+
+<div class="critique-item"><div class="critique-mark">02</div><div class="critique-content">
+<h4>La metafora teatral puede oscurecer dinamicas de poder</h4>
+<p>Tratar a empleados como actores puede normalizar la performance emocional forzada sin reconocer costos psicologicos.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Un empleado de Geek Squad con turno de 10 horas no puede elegir no actuar &mdash; la characterization es condicion de empleo.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Arlie Hochschild (The Managed Heart, 1983) documento costos del emotional labour. Pine &amp; Gilmore no la citan.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Steelman: la intencion ('in order to') y la characterization bien hecha son liberadoras. Barb florecia en su rol.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Importa: millones de workers son evaluados por performance emocional sin compensacion proporcional.</p></div>
+</div>
+</div></div>
+
+<div class="critique-item"><div class="critique-mark">03</div><div class="critique-content">
+<h4>Circularidad en la definicion de experiencia economica</h4>
+<p>La definicion depende del cobro de admission fee, pero el argumento de que se DEBE cobrar depende de que sea oferta distinta.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Los mejores ejemplos (Starbucks, Apple Store, Geek Squad) violan el criterio definitivo: ninguno cobra admission fee explicita.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Steelman: 'you are what you charge for' es aspiracional. Las empresas que dan experiencias gratis estan en transicion.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Importa: la circularidad debilita la fuerza prescriptiva para empresas con modelos hibridos.</p></div>
+</div>
+</div></div>
+
+<div class="critique-item"><div class="critique-mark">04</div><div class="critique-content">
+<h4>La cosmovision cristiana del Encore limita la universalidad</h4>
+<p>Cierran con declaracion de fe que presenta transformaciones como ultima oferta porque la perfeccion pertenece a Dios.</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Efesios 2:8-10 y la dedicatoria 'To the Author and Perfecter of our faith' son explicitas.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Steelman: son intelectualmente honestos al declarar su cosmovision. Y la pregunta 'que glorifica tu empresa' funciona independientemente.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Importa: lectores de otras tradiciones podrian descartar prematuramente el framework completo.</p></div>
+</div>
+</div></div>
+
+<div class="critique-item"><div class="critique-mark">05</div><div class="critique-content">
+<h4>Insuficiente atencion a externalidades negativas</h4>
+<p>La experientialization puede tener costos ambientales (turismo masivo) y sociales (desigualdad de acceso).</p>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<button class="zoom-trigger">&#8853; Profundizar</button>
+<div class="zoom-panel">
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Si el cafe de $15 en Caffe Florian se generaliza, el resultado puede ser la destruccion del entorno que hacia la experiencia valiosa.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Steelman: el libro es sobre estrategia empresarial, no politica publica. La regulacion corresponde a gobiernos.</p></div>
+<div class="zoom-item"><span class="zoom-bullet">&rarr;</span><p>Importa: la transicion ya genera resistencia ciudadana (movimientos anti-turismo en ciudades europeas).</p></div>
+</div>
+</div></div>
+
+</div>
+</div>
+</section>
+
+<!-- ===== CONNECTIONS ===== -->
+<section id="connections">
+<div class="container">
+<div class="section-num">07</div>
+<h2>Conexiones <em>Intelectuales</em></h2>
+<div class="connections-grid">
+<div class="connection"><div class="connection-author">Erving Goffman</div><div class="connection-title">The Presentation of Self in Everyday Life</div><div class="connection-relation">Base sociologica del modelo 'Work is Theatre.' Distingue performers sinceros de cinicos.</div></div>
+<div class="connection"><div class="connection-author">Richard Schechner</div><div class="connection-title">Performance Theory</div><div class="connection-relation">Provee el Enactment Model: drama, script, theatre, performance.</div></div>
+<div class="connection"><div class="connection-author">Milton Mayeroff</div><div class="connection-title">On Caring</div><div class="connection-relation">Lectura obligatoria para la economia de transformaciones. Define caring como 'helping another grow.'</div></div>
+<div class="connection"><div class="connection-author">Adam Smith</div><div class="connection-title">The Wealth of Nations</div><div class="connection-relation">Descarto experiencias como 'unproductive labour.' Pine &amp; Gilmore corrigen esta vision.</div></div>
+<div class="connection"><div class="connection-author">Jeremy Rifkin</div><div class="connection-title">The End of Work</div><div class="connection-relation">Teme destruccion de empleo; Pine &amp; Gilmore argumentan que experiencias crearan los empleos perdidos.</div></div>
+<div class="connection"><div class="connection-author">Arlie Hochschild</div><div class="connection-title">The Managed Heart</div><div class="connection-relation">Critica no citada: documenta costos psicologicos del emotional labour que el modelo teatral podria normalizar.</div></div>
+<div class="connection"><div class="connection-author">Hamel &amp; Prahalad</div><div class="connection-title">Competing for the Future</div><div class="connection-relation">Su strategic intent informa la vision sobre busqueda de unicidad corporativa.</div></div>
+<div class="connection"><div class="connection-author">Clayton Christensen</div><div class="connection-title">The Innovator's Dilemma</div><div class="connection-relation">Complementario: Christensen explica por que fracasan ante disrupcion; Pine &amp; Gilmore explican hacia donde ascender.</div></div>
+</div>
+</div>
+</section>
+
+<!-- ===== CLOSING ===== -->
+<footer class="closing">
+<div class="closing-text">"Tu negocio es un escenario. Actua en consecuencia."</div>
+<div class="closing-author">B. Joseph Pine II &amp; James H. Gilmore</div>
+</footer>
+
+<!-- ===== JS ===== -->
+<script>
+(function(){
+'use strict';
+
+// TL;DR TABS
+var tabContainer=document.querySelector('.tldr-tabs');
+if(tabContainer){
+  var tabs=tabContainer.querySelectorAll('[data-tab]');
+  var panels=document.querySelectorAll('[data-panel]');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active')});
+      panels.forEach(function(p){p.classList.remove('active')});
+      tab.classList.add('active');
+      var panel=document.querySelector('[data-panel="'+tab.dataset.tab+'"]');
+      if(panel)panel.classList.add('active');
+    });
+  });
+}
+
+// BILINGUAL QUOTES (mobile tap)
+document.querySelectorAll('.bilingual-quote').forEach(function(q){
+  q.addEventListener('click',function(){
+    if(window.matchMedia('(hover:hover)').matches)return;
+    q.classList.toggle('show-translation');
+  });
+});
+
+// ZOOM PANELS - addEventListener only (no inline onclick for file:// compatibility)
+document.addEventListener('click', function(e) {
+  var btn = e.target.closest('.zoom-trigger, .zoom-trigger-inline, .add-quotes-btn');
+  if (!btn) return;
+  e.stopPropagation();
+  // Find the next sibling that is a zoom-panel
+  var sibling = btn.nextElementSibling;
+  while (sibling && !sibling.classList.contains('zoom-panel')) {
+    sibling = sibling.nextElementSibling;
+  }
+  if (sibling && sibling.classList.contains('zoom-panel')) {
+    sibling.classList.toggle('expanded');
+    // Toggle button text
+    if (btn.classList.contains('zoom-trigger')) {
+      btn.textContent = sibling.classList.contains('expanded') ? '\u2296 Cerrar' : '\u2295 Profundizar';
+    }
+  }
+});
+
+})();
+</script>
+
+</body>
+</html>
