@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Does He Do That? — Infografia Maestra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=JetBrains+Mono:wght@400;500;700&family=Inter+Tight:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ece6db;
+    --bg-dark: #14110f;
+    --ink: #14110f;
+    --ink-soft: #4a443d;
+    --paper: #f5f1ea;
+    --rule: #14110f;
+    --accent-red: #8b1a1a;
+    --accent-ochre: #a07845;
+    --accent-green: #3a5a40;
+    --accent-blue: #2a4a5a;
+    --warn: #8b1a1a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    line-height: 1.55;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .sans { font-family: 'Inter Tight', system-ui, sans-serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .serif { font-family: 'Fraunces', Georgia, serif; }
+
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  section { padding: 80px 0; border-bottom: 1px solid var(--rule); }
+  section.dark { background: var(--bg-dark); color: var(--paper); border-bottom-color: var(--paper); }
+  section.dark .rule { background: var(--paper); }
+  section.dark h2, section.dark h3 { color: var(--paper); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: var(--bg-dark);
+    color: var(--paper);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 30%, rgba(139,26,26,0.2), transparent 50%),
+                      radial-gradient(circle at 80% 70%, rgba(160,120,69,0.1), transparent 40%);
+    pointer-events: none;
+  }
+  .hero-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(245,241,234,0.5);
+    z-index: 2;
+  }
+  .hero-main { z-index: 2; max-width: 1180px; margin: 0 auto; width: 100%; padding: 60px 0; }
+  .hero-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .hero-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(44px, 7vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    font-variation-settings: 'SOFT' 50;
+  }
+  .hero-title em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent-ochre);
+  }
+  .hero-subtitle {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(20px, 2.5vw, 28px);
+    color: rgba(245,241,234,0.7);
+    margin-bottom: 48px;
+    max-width: 720px;
+  }
+  .hero-authors {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: rgba(245,241,234,0.8);
+  }
+  .hero-thesis {
+    margin-top: 64px;
+    padding: 32px;
+    border: 1px solid rgba(245,241,234,0.2);
+    border-left: 4px solid var(--accent-red);
+    max-width: 820px;
+    background: rgba(0,0,0,0.2);
+  }
+  .hero-thesis-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent-red);
+    margin-bottom: 12px;
+  }
+  .hero-thesis-text {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.4;
+    color: var(--paper);
+  }
+  .hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245,241,234,0.4);
+    z-index: 2;
+  }
+
+  /* METADATA STRIP */
+  .meta-strip { background: var(--ink); color: var(--paper); padding: 32px; }
+  .meta-grid { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 32px; }
+  .meta-cell { border-left: 1px solid rgba(245,241,234,0.2); padding-left: 16px; }
+  .meta-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(245,241,234,0.5); margin-bottom: 8px; }
+  .meta-value { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 400; }
+  .meta-value.urgent { color: var(--accent-red); }
+
+  /* SECTION HEADERS */
+  .section-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent-red); margin-bottom: 12px; }
+  h2 { font-family: 'Fraunces', serif; font-weight: 300; font-size: clamp(36px, 5vw, 64px); line-height: 1; letter-spacing: -0.02em; margin-bottom: 48px; color: var(--ink); }
+  h2 em { font-style: italic; color: var(--accent-red); font-weight: 400; }
+  h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 16px; }
+
+  /* TLDR */
+  .tldr-tabs { display: flex; gap: 0; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+  .tldr-tabs [data-tab] { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; padding: 12px 20px; cursor: pointer; border: none; background: none; color: var(--ink-soft); border-bottom: 2px solid transparent; margin-bottom: -2px; transition: color 0.2s, border-color 0.2s; }
+  .tldr-tabs [data-tab]:hover { color: var(--ink); }
+  .tldr-tabs [data-tab].active { color: var(--accent-red); border-bottom-color: var(--accent-red); }
+  [data-panel] { display: none; }
+  [data-panel].active { display: block; }
+  .tldr-1 .tldr-text { font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(28px, 3.5vw, 44px); line-height: 1.15; font-weight: 300; letter-spacing: -0.01em; }
+  .tldr-2 .tldr-text { font-family: 'Fraunces', serif; font-size: 19px; line-height: 1.6; max-width: 780px; }
+  .tldr-3 .tldr-text { font-family: 'Fraunces', serif; font-size: 17px; line-height: 1.65; max-width: 780px; color: var(--ink-soft); }
+  .tldr-3 .tldr-text p { margin-bottom: 14px; }
+
+  /* CHAIN */
+  .chain { display: grid; grid-template-columns: 1fr; gap: 0; counter-reset: step; }
+  .chain-step { display: grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 24px 0; border-bottom: 1px dashed rgba(20,17,15,0.2); counter-increment: step; }
+  .chain-step:last-child { border-bottom: none; }
+  .chain-num { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--accent-red); font-weight: 700; letter-spacing: 0.1em; padding-top: 6px; }
+  .chain-num::before { content: "0" counter(step); }
+  .chain-content h4 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 22px; line-height: 1.2; margin-bottom: 8px; }
+  .chain-content p { font-size: 16px; line-height: 1.55; color: var(--ink-soft); }
+
+  /* CHAPTERS */
+  .chapters-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
+  .chapter-card { display: grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--ink); }
+  .chapter-card:last-child { border-bottom: 1px solid var(--ink); }
+  .chapter-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--accent-red); text-transform: uppercase; padding-top: 4px; }
+  .chapter-title { font-family: 'Fraunces', serif; font-weight: 500; font-size: 24px; line-height: 1.15; margin-bottom: 6px; }
+  .chapter-tagline { font-family: 'Fraunces', serif; font-style: italic; font-size: 16px; color: var(--accent-red); margin-bottom: 14px; }
+  .chapter-summary { font-size: 16px; line-height: 1.6; color: var(--ink-soft); margin-bottom: 14px; max-width: 760px; }
+  .chapter-points { list-style: none; margin-bottom: 14px; }
+  .chapter-points li { font-size: 15px; line-height: 1.55; padding-left: 20px; position: relative; margin-bottom: 6px; color: var(--ink-soft); }
+  .chapter-points li::before { content: '\2014'; position: absolute; left: 0; color: var(--accent-red); }
+  .chapter-quote { font-family: 'Fraunces', serif; font-style: italic; font-size: 15px; line-height: 1.5; padding: 12px 0 12px 20px; border-left: 3px solid var(--accent-ochre); color: var(--ink); max-width: 700px; }
+
+  /* GLOSSARY */
+  .glossary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; border-top: 1px solid var(--ink); }
+  .glossary-term { padding: 24px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+  .glossary-name { font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; margin-bottom: 8px; color: var(--ink); }
+  .glossary-def { font-size: 15px; line-height: 1.5; color: var(--ink-soft); }
+
+  /* QUOTES */
+  .quotes-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
+  .pull-quote { padding: 40px 0; border-bottom: 1px solid rgba(245,241,234,0.2); }
+  .pull-quote:last-child { border-bottom: none; }
+  .pull-quote-text { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: clamp(22px, 3vw, 34px); line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 16px; }
+  .pull-quote-cite { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-ochre); }
+
+  /* BILINGUAL QUOTES */
+  .bilingual-quote { position: relative; padding: 24px 0; }
+  .bilingual-quote .quote-translation { font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(20px, 2.5vw, 30px); line-height: 1.3; margin-bottom: 8px; }
+  .bilingual-quote .quote-original { font-family: 'Fraunces', serif; font-style: italic; font-size: 15px; line-height: 1.4; color: rgba(245,241,234,0.4); max-height: 0; overflow: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; opacity: 0; }
+  @media (hover: hover) {
+    .bilingual-quote:hover .quote-original { max-height: 200px; opacity: 1; }
+  }
+  .bilingual-quote.show-translation .quote-original { max-height: 200px; opacity: 1; }
+  .bilingual-quote cite { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-ochre); font-style: normal; display: block; margin-top: 12px; }
+
+  /* ROUTES */
+  .routes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .route { padding: 24px; border: 1px solid var(--ink); background: var(--paper); }
+  .route-time { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-red); margin-bottom: 8px; }
+  .route-name { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500; margin-bottom: 12px; }
+  .route-list { list-style: none; font-size: 14px; line-height: 1.5; color: var(--ink-soft); }
+  .route-list li { padding: 6px 0; border-bottom: 1px dotted rgba(20,17,15,0.15); }
+  .route-list li:last-child { border-bottom: none; }
+
+  /* ACTIONABLE TABLE */
+  .actionable-table { width: 100%; border-collapse: collapse; }
+  .actionable-table th, .actionable-table td { text-align: left; padding: 16px; border-bottom: 1px solid var(--ink); vertical-align: top; font-size: 15px; }
+  .actionable-table th { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-red); border-bottom: 2px solid var(--ink); }
+  .actionable-table .col-action { font-weight: 500; }
+  .actionable-table .col-type { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+
+  /* CRITIQUE */
+  .critique-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+  .critique-item { display: grid; grid-template-columns: 40px 1fr; gap: 16px; padding: 20px 0; border-top: 1px dashed rgba(245,241,234,0.3); }
+  .critique-item:first-child { border-top: 1px solid var(--paper); }
+  .critique-mark { font-family: 'JetBrains Mono', monospace; font-size: 18px; color: var(--accent-red); font-weight: 700; }
+  .critique-content h4 { font-family: 'Fraunces', serif; font-size: 19px; margin-bottom: 8px; color: var(--paper); font-weight: 500; }
+  .critique-content p { font-size: 15px; line-height: 1.6; color: rgba(245,241,234,0.75); }
+
+  /* CONNECTIONS */
+  .connections-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; }
+  .connection { padding: 20px 24px 20px 0; border-top: 1px solid var(--ink); }
+  .connection-author { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-red); margin-bottom: 4px; }
+  .connection-title { font-family: 'Fraunces', serif; font-size: 17px; font-weight: 500; line-height: 1.2; margin-bottom: 8px; }
+  .connection-relation { font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+
+  /* ANKI */
+  .anki-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
+  .anki-card { padding: 20px 0; border-bottom: 1px solid var(--ink); }
+  .anki-card:first-child { border-top: 1px solid var(--ink); }
+  .anki-q { font-family: 'Fraunces', serif; font-weight: 500; font-size: 17px; margin-bottom: 8px; color: var(--ink); }
+  .anki-q::before { content: 'Q. '; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent-red); letter-spacing: 0.1em; }
+  .anki-a { font-size: 15px; line-height: 1.55; color: var(--ink-soft); padding-left: 28px; }
+  .anki-a::before { content: 'A. '; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent-ochre); letter-spacing: 0.1em; margin-left: -28px; }
+
+  /* CLOSING */
+  .closing { text-align: center; padding: 120px 32px; background: var(--bg-dark); color: var(--paper); }
+  .closing-text { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: clamp(32px, 5vw, 56px); line-height: 1.1; letter-spacing: -0.02em; max-width: 800px; margin: 0 auto 32px; }
+  .closing-author { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent-ochre); }
+
+  .rule { width: 60px; height: 2px; background: var(--ink); margin-bottom: 32px; }
+  .rule.accent { background: var(--accent-red); }
+
+  /* ZOOM CSS */
+  .zoom-trigger{font-family:'JetBrains Mono',monospace;font-size:11px;background:none;border:1px solid #8b1a1a;color:#8b1a1a;padding:3px 10px;border-radius:3px;cursor:pointer;margin:8px 0;display:inline-block;transition:all .2s}
+  .zoom-trigger:hover{background:#8b1a1a;color:#f5f1ea}
+  .zoom-trigger-inline{font-family:'JetBrains Mono',monospace;font-size:10px;background:none;border:1px solid #8b1a1a;color:#8b1a1a;padding:1px 6px;border-radius:3px;cursor:pointer;margin-left:6px;transition:all .2s;vertical-align:middle}
+  .zoom-trigger-inline:hover{background:#8b1a1a;color:#f5f1ea}
+  .zoom-panel{max-height:0;overflow:hidden;transition:max-height .4s ease;margin:8px 0 8px 16px;border-left:2px solid #8b1a1a;padding-left:14px}
+  .zoom-panel.expanded{max-height:5000px}
+  .zoom-item{margin-bottom:10px}
+  .zoom-item p{font-size:15px;line-height:1.55;color:var(--ink-soft);margin:0}
+  .zoom-bullet{color:#8b1a1a;font-family:'JetBrains Mono',monospace;font-size:13px;margin-right:6px}
+  section.dark .zoom-trigger,section.dark .zoom-trigger-inline{border-color:#a07845;color:#a07845}
+  section.dark .zoom-trigger:hover,section.dark .zoom-trigger-inline:hover{background:#a07845;color:#14110f}
+  section.dark .zoom-panel{border-left-color:#a07845}
+  section.dark .zoom-bullet{color:#a07845}
+
+  /* ADD QUOTES BUTTON */
+  .add-quotes-btn{font-family:'JetBrains Mono',monospace;font-size:11px;background:none;border:1px solid var(--accent-ochre);color:var(--accent-ochre);padding:4px 12px;border-radius:3px;cursor:pointer;margin-top:12px;display:inline-block;transition:all .2s}
+  .add-quotes-btn:hover{background:var(--accent-ochre);color:var(--paper)}
+
+  /* DISCLAIMER */
+  .disclaimer { font-family: 'Inter Tight', sans-serif; font-size: 14px; line-height: 1.6; color: rgba(245,241,234,0.6); padding: 20px; border: 1px solid rgba(245,241,234,0.15); margin-bottom: 32px; background: rgba(0,0,0,0.15); }
+
+  /* RESPONSIVE */
+  @media (max-width: 720px) {
+    .container { padding: 0 20px; }
+    section { padding: 56px 0; }
+    .hero { padding: 32px 20px; }
+    .chapter-card { grid-template-columns: 1fr; gap: 12px; }
+    .chain-step { grid-template-columns: 1fr; gap: 8px; }
+    .meta-grid { gap: 20px; }
+    .meta-cell { border-left: none; border-top: 1px solid rgba(245,241,234,0.2); padding-left: 0; padding-top: 12px; }
+    .critique-item { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-tag, .hero-title, .hero-subtitle, .hero-authors, .hero-thesis {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+  }
+  .hero-tag { animation-delay: 0.1s; }
+  .hero-title { animation-delay: 0.25s; }
+  .hero-subtitle { animation-delay: 0.45s; }
+  .hero-authors { animation-delay: 0.6s; }
+  .hero-thesis { animation-delay: 0.8s; }
+</style>
+</head>
+<body>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <div class="hero-top">
+    <span>Infografia Maestra</span>
+    <span>2026</span>
+  </div>
+  <div class="hero-main">
+    <div class="hero-tag">No ficcion argumentativa &middot; 408 paginas &middot; 15 capitulos</div>
+    <h1 class="hero-title">Why Does <em>He</em> Do That?</h1>
+    <p class="hero-subtitle">Inside the Minds of Angry and Controlling Men</p>
+    <p class="hero-authors">Lundy Bancroft &middot; Berkley Books / Penguin, 2002</p>
+    <div class="hero-thesis">
+      <div class="hero-thesis-label">Tesis Central</div>
+      <p class="hero-thesis-text">El abuso de pareja no proviene de emociones descontroladas ni enfermedad mental, sino de actitudes de posesion (ownership), derecho (entitlement) y control (control) culturalmente aprendidas que el abusador elige ejercer.</p>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <span>Lundy Bancroft</span>
+    <span>ISBN 0-425-19165-2</span>
+  </div>
+</header>
+
+<!-- METADATA STRIP -->
+<div class="meta-strip">
+  <div class="meta-grid">
+    <div class="meta-cell">
+      <div class="meta-label">Autor</div>
+      <div class="meta-value">Lundy Bancroft</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Anho</div>
+      <div class="meta-value">2002</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Paginas</div>
+      <div class="meta-value">408</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Genero</div>
+      <div class="meta-value">No ficcion</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Casos</div>
+      <div class="meta-value urgent">2,000+</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Experiencia</div>
+      <div class="meta-value">15+ anhos</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TL;DR ==================== -->
+<section id="tldr">
+  <div class="container">
+    <div class="section-num">01 &mdash; TL;DR</div>
+    <h2>Tres niveles de <em>sintesis</em></h2>
+
+    <div class="tldr-tabs">
+      <button data-tab="t1" class="active">10 seg</button>
+      <button data-tab="t2">60 seg</button>
+      <button data-tab="t3">5 min</button>
+    </div>
+
+    <div data-panel="t1" class="active tldr-1">
+      <p class="tldr-text">El abuso es una eleccion basada en actitudes de posesion, derecho y control, no una perdida de control emocional ni enfermedad mental.</p>
+    </div>
+
+    <div data-panel="t2" class="tldr-2">
+      <p class="tldr-text">Lundy Bancroft, tras 15 anhos trabajando con mas de 2,000 hombres abusivos, demuestra que el abuso de pareja no tiene sus raices en problemas emocionales, enfermedad mental ni adiccion. El abusador opera desde un sistema de creencias donde se siente duenho de su pareja, con derecho a controlarla, y con justificacion para castigarla cuando ella resiste. Los 17 mitos populares sobre las causas del abuso han sido creados en gran medida por los propios abusadores. Los sentimientos no gobiernan el comportamiento abusivo; las creencias, valores y habitos son las fuerzas impulsoras. El cambio es posible pero raro, requiere 13 pasos especificos, y la terapia individual o de pareja no solo es ineficaz sino peligrosa.</p>
+    </div>
+
+    <div data-panel="t3" class="tldr-3">
+      <div class="tldr-text">
+        <p><strong>El misterio es deliberado.</strong> El hombre abusivo QUIERE ser un misterio. Necesita que todos crean que su comportamiento no tiene sentido para evitar consecuencias. Pero dentro de su mente hay un mundo de creencias, percepciones y respuestas que encajan de manera sorprendentemente logica.</p>
+        <p><strong>No son sus emociones.</strong> 17 mitos populares -- desde "fue abusado de ninho" hasta "el alcohol lo causa" -- han sido propagados por los propios abusadores. La realidad: sus clientes difieren muy poco de hombres no abusivos en experiencias emocionales. La diferencia esta en como PIENSAN: actitudes de posesion (ownership), derecho (entitlement) y control.</p>
+        <p><strong>La mentalidad abusiva tiene estructura.</strong> Las raices son la posesion, el tronco es el derecho, las ramas son el control. Se manifiesta en 10 realidades: es controlador, se siente con derecho, invierte la realidad, falta de respeto, confunde amor y abuso, es manipulador, cuida su imagen publica, se siente justificado, niega y minimiza, y es posesivo.</p>
+        <p><strong>Diez tipos, una raiz.</strong> Desde el Demand Man hasta el Terrorist, pasando por el Water Torturer que prueba que la ira no causa el abuso (asalto psicologico sin levantar la voz) y Mr. Sensitive que usa lenguaje de sentimientos como fachada. Todos comparten el mismo nucleo de control y desprecio.</p>
+        <p><strong>El abuso beneficia al abusador.</strong> 10 beneficios concretos explican su resistencia al cambio: satisfaccion del poder, trabajo gratuito, control financiero, dobles estandares. De 2,000 hombres, ningun periodo bueno duro a largo plazo sin trabajo profundo. Los periodos buenos son PARTE del abuso.</p>
+        <p><strong>No nace, se hace.</strong> La socializacion cultural -- leyes que legalizaban el abuso hasta los 1990s, religion que ordena sumision, medios que glamorizan la violencia, pornografia como manual de entrenamiento -- crea al abusador. Mas del 50% de los clientes NO crecieron con padre abusivo; la cultura sola basta.</p>
+        <p><strong>El cambio es posible pero raro.</strong> Requiere 13 pasos especificos, motivacion extrinseca, y un programa especializado (NO terapia individual ni de pareja). Un abusador que no renuncia a sus privilegios centrales no permanecera no-abusivo. La solucion requiere accion coordinada en todos los niveles: individual, comunitario, institucional y cultural.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ARGUMENT CHAIN ==================== -->
+<section id="chain">
+  <div class="container">
+    <div class="section-num">02 &mdash; Cadena Argumental</div>
+    <h2>La <em>estructura</em> del argumento</h2>
+    <div class="chain">
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>El abusador quiere ser un misterio (mystery)</h4>
+          <p>Cultiva deliberadamente la confusion para evitar consecuencias. Su comportamiento SI tiene sentido cuando se examina su mentalidad interna.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Tres parejas aparentemente opuestas (Maury energetico, Fran timido, Paul encantador) comparten la misma fuente: mismas actitudes, excusas y perspectiva</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La version del abusador y la de su pareja son mundos aparte -- Dale describe 10 anhos buenos, Maureen recuerda insultos desde la boda</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Los abusadores reclutan aliados incluyendo terapeutas, como Martin que logro que su terapeuta diagnosticara a Ginny sin conocerla</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La apariencia de cambio puede ser completamente falsa: Carl fingia progreso mientras aterrorizaba a Peggy en casa</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Estadisticas devastadoras: 2-4 millones de mujeres agredidas al anho, 1/3 sera victima, 5 millones de ninhos testigos</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>17 mitos creados por los propios abusadores</h4>
+          <p>Los sentimientos no gobiernan el comportamiento abusivo; las creencias (beliefs), valores (values) y habitos (habits) son las fuerzas impulsoras.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mito de la perdida de control: Michael solo rompia las cosas de Sheila, nunca las suyas. Mantienen limites conscientes incluso durante episodios</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mito de la enfermedad mental: la gran mayoria son psicologicamente normales. Su sistema de valores es insalubre, no su psicologia</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>'No es abusivo porque esta enojado; esta enojado porque es abusivo' -- la ira es RESULTADO del abuso, no su causa</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mito de la baja autoestima: cuando Emerge llevo clientes a TV, cada uno maltrato a su pareja dias despues</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El sketch de David y Carole: los abusadores dieron retroalimentacion experta sobre tecnicas de control, demostrando que saben exactamente lo que hacen</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>La mentalidad abusiva: 10 realidades</h4>
+          <p>Las raices son la posesion (ownership), el tronco es el derecho (entitlement), y las ramas son el control. Abuso y respeto son opuestos diametricos.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Realidad 1: 'Tu problema no es que pierdes el control de ti mismo, es que TOMAS control de tu pareja'</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Realidad 2 - Derecho: se arroga derechos de cuidado fisico, emocional, sexual, deferencia y libertad de responsabilidad</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Realidad 3: caso Emile/Tanya donde la autodefensa de ella fue definida como agresion por el abusador</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Realidad 6 - Manipulacion: 'en ciertos aspectos la manipulacion es peor que el abuso abierto' porque la victima no identifica que salio mal</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Realidad 10 - Posesividad: el manantial del que brotan todas las demas corrientes; el abuso empeora conforme la relacion se vuelve mas seria</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>Diez tipos de abusadores, una misma raiz</h4>
+          <p>Desde el Demand Man hasta el Terrorist, varian en superficie pero comparten el mismo nucleo de control y desprecio.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>The Demand Man: derecho extremo. 'Es tu trabajo hacer cosas por mi. Estoy por encima de la critica'</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>The Water Torturer: prueba que la ira no causa el abuso. Asalto psicologico sin levantar la voz, usa su calma como arma</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mr. Sensitive: la cobertura mas persuasiva. Lenguaje de sentimientos como fachada del control</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>The Terrorist: Gerald dijo 'Te quedan seis meses' sin haberla tocado nunca. Paraliza con miedo y posible sadismo</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Cualquier tipo puede usar violencia fisica; la violencia es una 'carta de triunfo' cuando sienten que pierden control</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>El abuso se infiltra gradualmente con senales identificables</h4>
+          <p>14 senales de advertencia (warning signs) tempranas. El abusador no planea ser abusivo; fantasea con una mujer sin necesidades propias.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El 'Jardin del Eden' es universal: intensidad de carinho inusual al inicio que atrapa a la mujer</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El comportamiento es consciente y deliberado pero el pensamiento subyacente es en gran parte inconsciente</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>14 senales: habla irrespetuosamente de ex-parejas, es controlador, posesivo, nada es su culpa, presiona por sexo</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El remordimiento genuino rara vez ayuda porque colisiona con su sentido de derecho (entitlement)</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>La vida cotidiana: ciclos, beneficios y resistencia al cambio</h4>
+          <p>La abusividad CREA el conflicto. Los periodos buenos son parte integral del abuso. 10 beneficios concretos explican todo.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La discusion abusiva como guerra: el abusador ve cada discusion como una guerra que debe ganar</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Ciclo de tres fases: acumulacion de tension, erupcion, corazones y flores (hearts and flowers)</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>De ~2,000 hombres, ningun periodo bueno duro a largo plazo sin trabajo profundo en actitudes abusivas</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>10 beneficios: satisfaccion del poder, trabajo gratuito, control financiero, dobles estandares</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>Sexualidad y adiccion como arenas de poder</h4>
+          <p>El sexo asombroso y la agresion sexual surgen de la misma mentalidad. El alcohol no causa abuso y la sobriedad no lo cura.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Cuatro pilares de la mentalidad sexual: es para el, ella le debe sexo, establece poder, la ve como objeto</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La coercion sexual sin fuerza fisica ES agresion sexual: presion, privacion de suenho, chantaje emocional</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Max golpeo a Lynn solo donde la ropa cubriria estando borracho: decisiones conscientes bajo intoxicacion</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La recuperacion de la adiccion frecuentemente se convierte en nueva arma: 'Estas amenazando mi sobriedad!'</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>Separacion, hijos, aliados y sistema legal</h4>
+          <p>La separacion es el periodo mas peligroso. Los hijos son usados como armas. Los aliados del abusador incluyen terapeutas, jueces y familiares.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La separacion es periodo de riesgo alto de homicidio; la violencia frecuentemente ESCALA post-separacion</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Wayne dio leche podrida a su bebe de 10 meses como venganza contra su esposa</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>'Permanecer neutral es coludirse con el hombre abusivo' -- Judith Herman via Bancroft</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Phil fingio cambio 3 meses, fue absuelto: 'I guess that's it for Mr. Nice Guy'</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>No nace, se hace: la socializacion cultural crea abusadores</h4>
+          <p>Leyes, religion, medios, pornografia y familia transmiten valores de posesion y derecho. El abuso es opresion a escala domestica.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Legal golpear a la esposa hasta el 1800s; consecuencias consistentes no hasta los 1990s</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Eminem: Grammy por cancion de feminicidio; Guns N' Roses: 'tuve que matarla'</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mas del 50% NO crecieron con padre abusivo: la cultura sola basta para crear un abusador</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El abuso domestico es modelo a escala de opresion sistemica: mismas tacticas en todo sistema opresivo</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-num"></div>
+        <div class="chain-content">
+          <h4>El cambio requiere 13 pasos y accion coordinada</h4>
+          <p>No hay atajos. La terapia individual y de pareja son peligrosas. La solucion es multisistmica: individual, comunitaria, institucional y cultural.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>13 pasos desde admitir plenamente el abuso hasta aceptar rendicion de cuentas de por vida</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Terapia de pareja: Irene se abrio en sesion; Quentin le estrello la cabeza contra el tablero del auto</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Nada funcionaria mas rapido que hacer que amigos y familia de abusivos dejen de habilitarlos</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Si MADD cambio la actitud cultural hacia muertes por alcohol, podemos cambiar la actitud hacia el abuso</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHAPTERS ==================== -->
+<section id="chapters">
+  <div class="container">
+    <div class="section-num">03 &mdash; Capitulos</div>
+    <h2>Mapa del <em>libro</em></h2>
+    <div class="chapters-grid">
+
+      <div class="chapter-card">
+        <div class="chapter-num">Intro</div>
+        <div>
+          <div class="chapter-title">Introduction</div>
+          <div class="chapter-tagline">El problema esta dentro de su mente, no en sus emociones</div>
+          <p class="chapter-summary">El proposito del libro es equipar a las mujeres con la capacidad de protegerse. Los hombres abusivos difieren muy poco de los no abusivos en sus experiencias emocionales; la diferencia esta en como piensan. Bancroft acumulo conocimiento de 2,000+ casos en 15+ anhos como consejero en Emerge.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Bancroft comenzo en 1987 en Emerge, la primera agencia especializada en EE.UU. Los primeros 5 anhos trabajo con clientes voluntarios; luego llegaron los mandados por tribunales, con mayor violencia fisica</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Descubrimiento clave: los fisicamente violentos no eran diferentes de los verbalmente abusivos en actitudes y excusas</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Siempre contacta a la mujer con triple objetivo: soporte emocional, informacion de servicios, y ayudar a deshacer los nudos mentales</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El libro aplica a relaciones del mismo sexo: exhiben el mismo pensamiento y tacticas</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El objetivo ironico: ayudar a la mujer a pensar MENOS en el abusador y recuperar el centro de su propia vida</p></div>
+          </div>
+          <ul class="chapter-points">
+            <li>El termino 'abusador' cubre un amplio espectro: desde maltrato verbal hasta violencia fisica</li>
+            <li>La mujer maltratada es considerada la persona a quien se sirve primariamente, no el abusador</li>
+            <li>El objetivo final es que la mujer se ponga a si misma y a sus hijos en el centro de su propia vida</li>
+          </ul>
+          <blockquote class="chapter-quote">"El problema del abuso tiene sorprendentemente poco que ver con como se siente un hombre y todo que ver con como piensa." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 01</div>
+        <div>
+          <div class="chapter-title">The Mystery</div>
+          <div class="chapter-tagline">El hombre abusivo QUIERE ser un misterio</div>
+          <p class="chapter-summary">El hombre abusivo quiere ser un misterio para escapar consecuencias. Dentro de su mente hay un mundo de creencias que encajan de manera sorprendentemente logica. Tres parejas opuestas demuestran que las raices son identicas.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Cinco puzzles confrontan a profesionales: versiones opuestas, celos con racionalidad, reclutamiento de aliados, control calculado, apariencia de cambio falsa</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Caso Marshall: acuso a su esposa de sexo en un elevador, admitio que sabia que no era cierto -- tacticas deliberadas, no sintomas psiquiatricos</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Caso Carl: modelo en sesiones grupales, pero en casa aterrorizaba a Peggy con golpes, cuchillo al cuello, diciendo que el programa era 'total bullshit'</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Cuando el mundo descubre al abusador, su poder comienza a derretirse</p></div>
+          </div>
+          <ul class="chapter-points">
+            <li>2-4 millones de mujeres agredidas al anho; 1/3 sera victima en su vida</li>
+            <li>Los abusadores reclutan aliados incluyendo terapeutas y programas</li>
+            <li>El abuso no es producto de malas dinamicas relacionales; reside dentro del abusador</li>
+          </ul>
+          <blockquote class="chapter-quote">"El hombre abusivo quiere ser un misterio. Para salirse con la suya, necesita convencer a todos de que su comportamiento no tiene sentido." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 02</div>
+        <div>
+          <div class="chapter-title">The Mythology</div>
+          <div class="chapter-tagline">Los mitos fueron creados por los propios abusadores</div>
+          <p class="chapter-summary">17 mitos sistematicamente desmontados. El abusador trabaja como un mago: distrae enfocando en sus sentimientos para que no notes la verdadera causa en como piensa. Las creencias, valores y habitos son las fuerzas impulsoras.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mito 6 - Perdida de control: Michael solo rompia las cosas de Sheila. Cuando preguntan 'por que no hiciste algo peor?', siempre hay razon</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El sketch de David y Carole: los abusadores dieron retroalimentacion experta: 'Da un par de pasos hacia ella para que sepa que hablas en serio'</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mito 11 - Baja autoestima: cuando Emerge llevo clientes a TV, cada uno maltrato a su pareja dias despues. Tuvieron que dejar de hacerlo</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mito 13 - Habilidades de comunicacion: ELIGEN no usarlas con sus parejas. Manejan conflictos en el trabajo sin amenazar</p></div>
+          </div>
+          <ul class="chapter-points">
+            <li>Michael solo rompia las cosas de Sheila, nunca las suyas -- control selectivo</li>
+            <li>'No es abusivo porque esta enojado; esta enojado porque es abusivo'</li>
+            <li>Su sistema de valores es insalubre, no su psicologia</li>
+          </ul>
+          <blockquote class="chapter-quote">"Los sentimientos no gobiernan el comportamiento abusivo; las creencias, valores y habitos son las fuerzas impulsoras." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 03</div>
+        <div>
+          <div class="chapter-title">The Abusive Mentality</div>
+          <div class="chapter-tagline">Las raices son posesion, el tronco es derecho, las ramas son control</div>
+          <p class="chapter-summary">10 realidades del pensamiento abusivo. La formula central: no 'pierde el control' sino 'toma control'. La posesividad es el manantial del que brotan todas las demas corrientes. Los abusadores son reacios, no incapaces.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Glenn destruyo el trabajo universitario de Harriet y fotos familiares como castigo por amenazar con mudarse</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Russell: calistenia matutina para hijos, esposa no podia hablar con nadie sin permiso, criticaba cena como restaurante</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Sheldon redujo a Kelly a 'un canal por el que Ashley llego al mundo' -- objetificacion extrema</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>David/Joanne: tres tacticas en tres incidentes -- negar emociones obvias, convertir quejas en crisis, bloquear sus metas</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La posesividad explica por que el abuso empeora conforme la relacion se vuelve mas seria</p></div>
+          </div>
+          <ul class="chapter-points">
+            <li>'Tu problema no es que pierdes el control; es que TOMAS control de tu pareja'</li>
+            <li>Cinco categorias de derechos arrogados: cuidado fisico, emocional, sexual, deferencia, libertad de responsabilidad</li>
+            <li>La objetificacion es razon critica de por que el abuso empeora con el tiempo</li>
+          </ul>
+          <blockquote class="chapter-quote">"El abuso crece de actitudes y valores, no de sentimientos. Las raices son la posesion, el tronco es el derecho, y las ramas son el control." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 04</div>
+        <div>
+          <div class="chapter-title">The Types of Abusive Men</div>
+          <div class="chapter-tagline">Diez perfiles, un mismo nucleo de control y desprecio</div>
+          <p class="chapter-summary">Diez tipos presentados como ingredientes de una receta. Cada mujer enfrenta su mezcla unica pero el sabor central tiene similitudes fundamentales. Desde el Demand Man hasta el Terrorist.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mr. Right: caso Pat/Gwen. Distorsiona cada argumento usando la 'Voz de la Verdad'. Con el tiempo, la pareja duda de su inteligencia</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Water Torturer: cuando ella grita o llora, dice 'Ves, tu eres la abusiva. Yo ni siquiera levante la voz'</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mr. Sensitive: Brad planeo humillar a Deanna en taller. Al ser confrontado, empujo a Bancroft negando violencia</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>The Player: 'Si es adicto a algo, es a la emocion de usar mujeres sin importarle los efectos'</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>The Victim: adopta lenguaje de victimas de abuso para invertir la realidad contra su pareja actual</p></div>
+          </div>
+          <ul class="chapter-points">
+            <li>The Water Torturer prueba que la ira no causa el abuso</li>
+            <li>The Terrorist: Gerald dijo 'Te quedan seis meses' sin haberla tocado nunca</li>
+            <li>Cualquier tipo puede usar violencia como 'carta de triunfo'</li>
+          </ul>
+          <blockquote class="chapter-quote">"Te quedan seis meses. Las cosas tienen que mejorar aqui. Seis meses." &mdash; Gerald (The Terrorist)</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 05</div>
+        <div>
+          <div class="chapter-title">How Abuse Begins</div>
+          <div class="chapter-tagline">Del Jardin del Eden a las 14 senales de advertencia</div>
+          <p class="chapter-summary">El abuso se infiltra gradualmente. El abusador no planea ser abusivo; fantasea con una mujer sin necesidades propias. 14 senales de advertencia y un plan de tres pasos para protegerse.</p>
+          <ul class="chapter-points">
+            <li>La fase encantadora ('Garden of Eden') es parte integral del patron abusivo</li>
+            <li>Su comportamiento es consciente pero su pensamiento subyacente es en gran parte inconsciente</li>
+            <li>Cuanto mas tiempo se permanece, mas dificil es salir por vinculo traumatico</li>
+          </ul>
+          <blockquote class="chapter-quote">"Un abusador es un ser humano, no un monstruo malvado, pero tiene un problema profundamente complejo y destructivo que no debe subestimarse." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 06</div>
+        <div>
+          <div class="chapter-title">The Abusive Man in Everyday Life</div>
+          <div class="chapter-tagline">La abusividad CREA el conflicto, no responde a el</div>
+          <p class="chapter-summary">Los periodos buenos son parte integral del abuso. 10 beneficios concretos explican la resistencia al cambio. Las diferencias culturales son reales pero las similitudes las superan con creces.</p>
+          <ul class="chapter-points">
+            <li>De ~2,000 hombres, ningun periodo bueno duro a largo plazo sin trabajo profundo</li>
+            <li>10 beneficios: poder, trabajo gratuito, control financiero, dobles estandares</li>
+            <li>El mejor predictor de violencia futura es el nivel de abuso VERBAL</li>
+          </ul>
+          <blockquote class="chapter-quote">"Su abusividad esta operando ANTES del conflicto: usualmente crea el conflicto, y determina la forma que toma." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 07</div>
+        <div>
+          <div class="chapter-title">Abusive Men and Sex</div>
+          <div class="chapter-tagline">El sexo deslumbrante y la agresion sexual nacen de la misma mentalidad</div>
+          <p class="chapter-summary">La sexualidad como arena de poder. Cuatro pilares de la mentalidad sexual abusiva. La coercion sexual sin fuerza fisica ES agresion. La pornografia como escuela de formacion.</p>
+          <ul class="chapter-points">
+            <li>El sexo 'asombroso' es producto de profundo autoinvolucramiento y narcisismo</li>
+            <li>Mujeres violadas por parejas intimas sufren efectos mas profundos que por extranos</li>
+            <li>El abusador usa el sexo para dividir a las mujeres entre si</li>
+          </ul>
+          <blockquote class="chapter-quote">"Mirando hacia atras ahora, puedo ver que fui violada una y otra vez por mas de diez anos." &mdash; Ex-pareja de un cliente</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 08</div>
+        <div>
+          <div class="chapter-title">Abusive Men and Addiction</div>
+          <div class="chapter-tagline">El alcohol no crea abusadores y la sobriedad no los cura</div>
+          <p class="chapter-summary">Dos problemas separados que se refuerzan mutuamente. El alcohol no tiene conexion biologica con la agresion. La recuperacion de la adiccion NO cura el abuso.</p>
+          <ul class="chapter-points">
+            <li>Max golpeo a Lynn solo donde la ropa cubriria estando extremadamente borracho</li>
+            <li>Los abusadores no 'tocan fondo' como los adictos porque el abuso no es autodestructivo para ellos</li>
+            <li>La recuperacion se convierte en arma: 'estas amenazando mi sobriedad'</li>
+          </ul>
+          <blockquote class="chapter-quote">"Por supuesto que no iba a hacer nada que se notara." &mdash; Max (estando borracho, golpeando solo donde la ropa cubriria)</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 09</div>
+        <div>
+          <div class="chapter-title">The Abusive Man and Breaking Up</div>
+          <div class="chapter-tagline">La separacion puede ser el periodo mas peligroso</div>
+          <p class="chapter-summary">El vinculo traumatico, las tacticas de guerra del abusador, y la planificacion de seguridad. La violencia frecuentemente ESCALA post-separacion.</p>
+          <ul class="chapter-points">
+            <li>Van: estrella del programa que violo orden de restriccion en semanas</li>
+            <li>El vinculo traumatico funciona como sindrome de Estocolmo</li>
+            <li>Bancroft conocio caso donde abusador psicologico mato a su pareja tras orden de restriccion</li>
+          </ul>
+          <blockquote class="chapter-quote">"Tu vida no le pertenece a nadie mas que a ti." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 10</div>
+        <div>
+          <div class="chapter-title">Abusive Men as Parents</div>
+          <div class="chapter-tagline">Un buen padre no abusa de la madre de sus hijos</div>
+          <p class="chapter-summary">La mentalidad abusiva se extiende a la crianza. Los hijos son danados y usados como armas. Los tribunales frecuentemente fallan.</p>
+          <ul class="chapter-points">
+            <li>Un hombre que golpea a su pareja: 7x mas probabilidad de abusar de los hijos</li>
+            <li>Wayne dio leche podrida a su bebe de 10 meses como venganza</li>
+            <li>La madre en doble vinculo: castigada por quedarse y por irse</li>
+          </ul>
+          <blockquote class="chapter-quote">"Un buen padre no abusa de la madre de sus hijos." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 11</div>
+        <div>
+          <div class="chapter-title">Abusive Men and Their Allies</div>
+          <div class="chapter-tagline">La neutralidad ante el abuso ES complicidad</div>
+          <p class="chapter-summary">El abusador recluta activamente aliados. La neutralidad sirve al perpetrador. No se encontro un solo curso sobre abuso en catalogos de posgrado de psicologia.</p>
+          <ul class="chapter-points">
+            <li>Ian se infiltro en la iglesia de los padres de Tina para sembrar mentiras</li>
+            <li>La nueva pareja se convierte en aliada principal contra la ex</li>
+            <li>La gran mayoria de alegaciones de abuso son sustancialmente precisas</li>
+          </ul>
+          <blockquote class="chapter-quote">"Permanecer neutral es coludirse con el hombre abusivo, sea o no esa tu intencion." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 12</div>
+        <div>
+          <div class="chapter-title">The Abusive Man and the Legal System</div>
+          <div class="chapter-tagline">El sistema puede proteger, pero el abusador sabe manipularlo</div>
+          <p class="chapter-summary">El abusador manipula cada nivel del sistema legal. Phil fingio cambio para ser absuelto. Las sentencias son mas cortas que por agresiones a extranos.</p>
+          <ul class="chapter-points">
+            <li>'I guess that's it for Mr. Nice Guy' -- Phil tras la absolucion</li>
+            <li>El abusador activa un 'interruptor': de furia a calma cuando llega la policia</li>
+            <li>Las ordenes de restriccion requieren analisis caso por caso</li>
+          </ul>
+          <blockquote class="chapter-quote">"Es como si pudiera activar un interruptor. La policia llega y de repente esta fresco como una lechuga." &mdash; Mujeres abusadas</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 13</div>
+        <div>
+          <div class="chapter-title">The Making of an Abusive Man</div>
+          <div class="chapter-tagline">Un abusador no nace, se hace</div>
+          <p class="chapter-summary">La abusividad proviene de valores culturales: leyes, religion, medios, pornografia, familia. Opera como forma de opresion. Mas del 50% de clientes NO tuvieron padre abusivo.</p>
+          <ul class="chapter-points">
+            <li>Eminem: Grammy por cancion de feminicidio. Guns N' Roses: 'tuve que matarla'</li>
+            <li>Legal golpear a la esposa hasta el 1800s; consecuencias hasta los 1990s</li>
+            <li>Un abusador aprendio demasiado bien las lecciones de su sociedad</li>
+          </ul>
+          <blockquote class="chapter-quote">"Un abusador no nace; se hace." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 14</div>
+        <div>
+          <div class="chapter-title">The Process of Change</div>
+          <div class="chapter-tagline">No hay atajos para el cambio y la mayoria no cambia</div>
+          <p class="chapter-summary">13 pasos especificos para el cambio genuino. La terapia de pareja es peligrosa. La individual produce abusadores sofisticados. Solo programas especializados tienen potencial.</p>
+          <ul class="chapter-points">
+            <li>Irene se abrio en terapia de pareja; Quentin le estrello la cabeza contra el tablero</li>
+            <li>Un abusador que no renuncia a sus privilegios centrales no permanecera no-abusivo</li>
+            <li>La motivacion inicial siempre es extrinseca</li>
+          </ul>
+          <blockquote class="chapter-quote">"No hay atajos para el cambio, no hay transformaciones magicas de la noche a la manana, no hay salidas faciles." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+      <div class="chapter-card">
+        <div class="chapter-num">Cap 15</div>
+        <div>
+          <div class="chapter-title">Creating an Abuse-Free World</div>
+          <div class="chapter-tagline">El abuso es un problema solucionable</div>
+          <p class="chapter-summary">Accion coordinada en todos los niveles: ser el opuesto completo del abusador. Los amigos y familia son la primera linea mas efectiva. Cuando multiples voces se alinean, el derecho del abusador se encoge.</p>
+          <ul class="chapter-points">
+            <li>Principio central: ser el opuesto completo del abusador en 7 contrastes</li>
+            <li>Nada funcionaria mas rapido que hacer que familiares dejen de habilitar</li>
+            <li>El abuso no proviene de incapacidad de resolver conflictos sino de reclamar estatus superior</li>
+          </ul>
+          <blockquote class="chapter-quote">"El abuso es un problema solucionable. Sabemos de donde viene, por que los abusadores son reacios a cambiar, y que se necesita para detenerlo." &mdash; Lundy Bancroft</blockquote>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GLOSSARY ==================== -->
+<section id="glossary">
+  <div class="container">
+    <div class="section-num">04 &mdash; Glosario</div>
+    <h2>Terminos <em>clave</em></h2>
+    <div class="glossary-grid">
+      <div class="glossary-term"><div class="glossary-name">Abusive Mentality (Mentalidad Abusiva)</div><div class="glossary-def">Conjunto de actitudes, creencias y valores que impulsan el comportamiento abusivo. No es enfermedad mental ni problema emocional, sino un sistema de pensamiento basado en posesion, derecho y control culturalmente aprendido.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Entitlement (Sentido de Derecho)</div><div class="glossary-def">Creencia del abusador en que tiene estatus especial con derechos exclusivos sobre su pareja. Se arroga derechos de cuidado fisico, emocional, sexual, deferencia y libertad de responsabilidad. El 'tronco' del arbol del abuso.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Ownership (Posesion/Propiedad)</div><div class="glossary-def">Sentido de propiedad sobre la pareja. La raiz fundamental y 'el manantial del que brotan todas las demas corrientes'. Explica por que el abuso empeora conforme la relacion se vuelve mas seria.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Control</div><div class="glossary-def">Las 'ramas' del arbol del abuso. El abusador no pierde el control; lo TOMA sobre su pareja. Se manifiesta en esferas de argumentos, libertad personal y crianza de hijos.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Traumatic Bonding (Vinculo Traumatico)</div><div class="glossary-def">Dependencia emocional creada por ciclos de abuso y amabilidad intermitente e impredecible. Funciona como sindrome de Estocolmo. El rescatador y el torturador son la misma persona.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Water Torturer (Torturador de Agua)</div><div class="glossary-def">Tipo de abusador que ejerce asalto psicologico sin levantar la voz. Usa sarcasmo, burla y comentarios crueles. Cuando la mujer grita, dice: 'Ves, tu eres la abusiva'. Prueba de que la ira no causa el abuso.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Cycle of Abuse (Ciclo de Abuso)</div><div class="glossary-def">Patron de tres fases: (1) Acumulacion de tension donde cultiva el 'Jardin de Resentimientos', (2) Erupcion por lo mas trivial, (3) Corazones y flores con arrepentimiento que cumple funciones de control.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Gaslighting (Distorsion de la Realidad)</div><div class="glossary-def">Tactica donde el abusador niega la realidad para que la mujer dude de su propia percepcion. Kenneth bajaba las luces insistiendo que nada habia cambiado. James escondia objetos insistiendo que siempre habian estado ahi.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Core Entitlements (Privilegios Centrales)</div><div class="glossary-def">El 'bunker trasero' que el abusador defiende a toda costa. Si no renuncia a ellos, toda apariencia de cambio es ilusion. Posiblemente el punto mas pasado por alto sobre abusadores y cambio.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Objectification (Cosificacion)</div><div class="glossary-def">Proceso de reducir a la pareja a un objeto sin pensamientos ni derechos. Sheldon: 'Es solo un canal por el que Ashley llego al mundo'. Razon critica de por que el abuso empeora con el tiempo.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Safety Planning (Planificacion de Seguridad)</div><div class="glossary-def">Estrategias concretas para protegerse: rutas de escape, llaves de repuesto, documentos importantes, palabras clave con amigos, cuenta bancaria secreta, informar a vecinos y escuela.</div></div>
+      <div class="glossary-term"><div class="glossary-name">Socialization (Socializacion)</div><div class="glossary-def">Proceso cultural continuo que transmite valores sobre roles de genero. Las fuentes se refuerzan mutuamente: leyes, religion, medios populares, pornografia, cultura infantil, familia.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== QUOTES ==================== -->
+<section id="quotes" class="dark">
+  <div class="container">
+    <div class="section-num">05 &mdash; Citas Clave</div>
+    <h2>En sus <em>palabras</em></h2>
+    <div class="quotes-grid">
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"El problema del abuso tiene sorprendentemente poco que ver con como se siente un hombre y todo que ver con como piensa."</p>
+          <p class="quote-original">"the problem of abusiveness has surprisingly little to do with how a man feels and everything to do with how he thinks."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"No es abusivo porque estaba enojado; estaba enojado porque es abusivo."</p>
+          <p class="quote-original">"He is not abusive because he was angry; he was angry because he was abusive."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"Tu problema no es que pierdes el control de ti mismo, es que tomas control de tu pareja. Para cambiar, necesitas soltar el control de ella."</p>
+          <p class="quote-original">"Your problem is not that you lose control of yourself, it's that you take control of your partner. In order to change, you need to let go of control of her."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"El abuso crece de actitudes y valores, no de sentimientos. Las raices son la posesion, el tronco es el derecho, y las ramas son el control."</p>
+          <p class="quote-original">"Abuse grows from attitudes and values, not feelings. The roots are ownership, the trunk is entitlement, and the branches are control."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"TU PAREJA ABUSIVA NO TIENE UN PROBLEMA CON SU IRA; TIENE UN PROBLEMA CON TU IRA."</p>
+          <p class="quote-original">"YOUR ABUSIVE PARTNER DOESN'T HAVE A PROBLEM WITH HIS ANGER; HE HAS A PROBLEM WITH YOUR ANGER."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"Permanecer neutral es coludirse con el hombre abusivo, sea o no esa tu intencion."</p>
+          <p class="quote-original">"To remain neutral is to collude with the abusive man, whether or not that is your goal."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"Un abusador no nace; se hace."</p>
+          <p class="quote-original">"An abuser is not born; he is made."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"Un buen padre no abusa de la madre de sus hijos."</p>
+          <p class="quote-original">"A good father does not abuse his children's mother."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"No hay atajos para el cambio, no hay transformaciones magicas de la noche a la manana, no hay salidas faciles."</p>
+          <p class="quote-original">"There are no shortcuts to change, no magical overnight transformations, no easy ways out."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"El abuso es un problema solucionable. Sabemos de donde viene; sabemos por que los abusadores son reacios a cambiar; y sabemos que se necesita para detenerlo."</p>
+          <p class="quote-original">"Abuse is a solvable problem. We know where it comes from; we know why abusers are reluctant to change; and we know what it takes to make abuse stop."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"Tu vida no le pertenece a nadie mas que a ti."</p>
+          <p class="quote-original">"Your life belongs to no one but you."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote class="bilingual-quote">
+          <p class="quote-translation">"Nada funcionaria mas rapido para terminar con el abuso de mujeres que hacer que los amigos y familia de hombres abusivos dejen de habilitarlos."</p>
+          <p class="quote-original">"Nothing would work faster to end the abuse of women than having the friends and family of abusive men stop enabling them."</p>
+          <cite>&mdash; Lundy Bancroft</cite>
+        </blockquote>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== READING ROUTES ==================== -->
+<section id="routes">
+  <div class="container">
+    <div class="section-num">06 &mdash; Rutas de Lectura</div>
+    <h2>Cuatro <em>caminos</em></h2>
+    <div class="routes-grid">
+      <div class="route">
+        <div class="route-time">30 minutos &middot; Esencial</div>
+        <div class="route-name">Solo necesito entender</div>
+        <ul class="route-list">
+          <li>Introduccion (panorama completo)</li>
+          <li>Cap. 2: The Mythology (los 17 mitos)</li>
+          <li>Cap. 3: The Abusive Mentality (las 10 realidades)</li>
+        </ul>
+      </div>
+      <div class="route">
+        <div class="route-time">2 horas &middot; Diagnostico</div>
+        <div class="route-name">Estoy en una relacion y tengo dudas</div>
+        <ul class="route-list">
+          <li>Introduccion</li>
+          <li>Cap. 1: The Mystery (por que es tan confuso)</li>
+          <li>Cap. 3: The Abusive Mentality (las 10 realidades)</li>
+          <li>Cap. 4: The Types (identificar su perfil)</li>
+          <li>Cap. 5: How Abuse Begins (senales de advertencia)</li>
+          <li>Cap. 6: Everyday Life (ciclos y beneficios)</li>
+        </ul>
+      </div>
+      <div class="route">
+        <div class="route-time">3 horas &middot; Accion</div>
+        <div class="route-name">Necesito protegerme y a mis hijos</div>
+        <ul class="route-list">
+          <li>Diagnostico completo (Caps. 1-6)</li>
+          <li>Cap. 7: Sex (si aplica)</li>
+          <li>Cap. 8: Addiction (si aplica)</li>
+          <li>Cap. 9: Breaking Up (planificacion de seguridad)</li>
+          <li>Cap. 10: As Parents (proteger a los hijos)</li>
+          <li>Cap. 12: Legal System (usar el sistema)</li>
+          <li>Cap. 14: Process of Change (evaluar si cambiara)</li>
+        </ul>
+      </div>
+      <div class="route">
+        <div class="route-time">6+ horas &middot; Profunda</div>
+        <div class="route-name">Quiero entender y ayudar a otros</div>
+        <ul class="route-list">
+          <li>Libro completo (16 capitulos)</li>
+          <li>Cap. 11: Allies (como no ser complice)</li>
+          <li>Cap. 13: Making of (raices culturales)</li>
+          <li>Cap. 15: Abuse-Free World (accion comunitaria)</li>
+          <li>Recursos al final del libro</li>
+          <li>Lectura complementaria: Trauma and Recovery (Herman)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ACTIONABLE TABLE ==================== -->
+<section id="actionable">
+  <div class="container">
+    <div class="section-num">07 &mdash; Tabla Accionable</div>
+    <h2>Que hacer <em>ahora</em></h2>
+    <div style="overflow-x:auto">
+    <table class="actionable-table">
+      <thead>
+        <tr>
+          <th>Accion</th>
+          <th>Para quien</th>
+          <th>Capitulo</th>
+          <th>Impacto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="col-action">Verificar las 14 senales de advertencia en tu relacion actual</td><td>Mujer con dudas</td><td>Cap. 5</td><td>Identificacion temprana</td></tr>
+        <tr><td class="col-action">Identificar cual de los 10 tipos se parece mas a tu pareja</td><td>Mujer en relacion abusiva</td><td>Cap. 4</td><td>Claridad y validacion</td></tr>
+        <tr><td class="col-action">Crear un plan de seguridad: rutas de escape, documentos, cuenta bancaria secreta</td><td>Mujer considerando irse</td><td>Cap. 9</td><td>Proteccion fisica</td></tr>
+        <tr><td class="col-action">Llamar a la linea de ayuda: (800) 799-7233</td><td>Cualquier mujer abusada</td><td>Intro</td><td>Romper el aislamiento</td></tr>
+        <tr><td class="col-action">Llevar un diario documentando incidentes y patrones</td><td>Mujer abusada</td><td>Cap. 15</td><td>Claridad y evidencia</td></tr>
+        <tr><td class="col-action">Escuchar respetuosamente a la mujer SIN decirle que hacer</td><td>Amigos/familia de mujer abusada</td><td>Cap. 15</td><td>Apoyo real</td></tr>
+        <tr><td class="col-action">Ser el opuesto del abusador: si el presiona, se paciente; si habla desde arriba, tratala como igual</td><td>Cualquier persona que apoya</td><td>Cap. 15</td><td>Empoderamiento</td></tr>
+        <tr><td class="col-action">Hablar con la pareja de un familiar/amigo acusado de abuso</td><td>Familia/amigos del abusador</td><td>Cap. 11, 15</td><td>Romper la habilitacion</td></tr>
+        <tr><td class="col-action">Buscar programa certificado de abusadores (no terapia individual ni de pareja)</td><td>Hombre que reconoce su abusividad</td><td>Cap. 14</td><td>Unica via de cambio real</td></tr>
+        <tr><td class="col-action">Evaluar los 13 pasos: esta tu pareja realmente cambiando?</td><td>Mujer cuya pareja dice que cambio</td><td>Cap. 14</td><td>Proteccion contra manipulacion</td></tr>
+        <tr><td class="col-action">Protestar representaciones mediaticas que glamorizan el abuso</td><td>Toda persona</td><td>Cap. 13, 15</td><td>Cambio cultural</td></tr>
+        <tr><td class="col-action">Ensenar a hijos varones sobre respeto e igualdad; no tolerar humor que degrade a mujeres</td><td>Padres y madres</td><td>Cap. 13, 15</td><td>Prevencion generacional</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CRITIQUE ==================== -->
+<section id="critique" class="dark">
+  <div class="container">
+    <div class="section-num">08 &mdash; Critica</div>
+    <h2>Observaciones <em>criticas</em></h2>
+
+    <div class="disclaimer">Las siguientes criticas no invalidan el aporte fundamental de la obra. Bancroft escribio desde una posicion unica de autoridad basada en 15+ anhos y 2,000+ casos directos. Este libro ha salvado vidas y sigue siendo la referencia mas citada en el campo.</div>
+
+    <div class="critique-grid">
+      <div class="critique-item">
+        <div class="critique-mark">01</div>
+        <div class="critique-content">
+          <h4>Enfoque casi exclusivamente heteronormativo</h4>
+          <p>Aunque menciona el abuso en parejas del mismo sexo, la obra esta centrada en hombres abusivos y mujeres victimas heterosexuales.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Las relaciones del mismo sexo reciben solo unas paginas, no un tratamiento profundo</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>No aborda relaciones trans o no-binarias</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La investigacion posterior ha demostrado tasas similares de abuso en parejas del mismo sexo</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Las dinamicas queer tienen particularidades que merecen analisis detallado propio</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="critique-item">
+        <div class="critique-mark">02</div>
+        <div class="critique-content">
+          <h4>Datos estadisticos de principios de los 2000s</h4>
+          <p>Las estadisticas datan de antes de 2002. El acoso cibernetico, el control por dispositivos moviles y la neurociencia del trauma han transformado el campo.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La era digital ha creado nuevas formas de control: rastreo GPS, revision de mensajes, acoso en redes sociales</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Los datos sobre eficacia de programas para abusadores se han expandido significativamente</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La neurociencia ha aportado comprension sobre trauma sin invalidar las conclusiones de Bancroft</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="critique-item">
+        <div class="critique-mark">03</div>
+        <div class="critique-content">
+          <h4>Rechazo categorico de enfoques terapeuticos</h4>
+          <p>Investigaciones posteriores sugieren que algunos enfoques terapeuticos pueden ser utiles COMO COMPLEMENTO de programas especializados.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La terapia cognitivo-conductual ha mostrado resultados prometedores como complemento</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>El rechazo total puede disuadir a profesionales de involucrarse constructivamente</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La evidencia sobre eficacia de batterer intervention programs es mixta en meta-analisis recientes</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="critique-item">
+        <div class="critique-mark">04</div>
+        <div class="critique-content">
+          <h4>Limitada consideracion de factores interseccionales</h4>
+          <p>La pobreza, las barreras raciales, la vulnerabilidad migratoria y la interseccion con racismo institucional merecen mas profundidad.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mujeres de color enfrentan barreras adicionales al buscar ayuda</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Mujeres inmigrantes indocumentadas son mencionadas pero no exploradas suficientemente</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La interseccion entre racismo institucional y abuso de pareja no se desarrolla</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="critique-item">
+        <div class="critique-mark">05</div>
+        <div class="critique-content">
+          <h4>Perspectiva clinica sin sistematizacion empirica formal</h4>
+          <p>Las conclusiones se basan en experiencia directa con ~2,000 hombres pero no en estudios controlados ni metodologia de investigacion formal.</p>
+          <button class="zoom-trigger">&#8853; Profundizar</button>
+          <div class="zoom-panel">
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>La evidencia es anecdotica y clinica, no experimental o epidemiologica</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Sesgo de seleccion: los clientes pueden no representar a todos los abusadores</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Las afirmaciones absolutas carecen del matiz que la investigacion cuantitativa proporcionaria</p></div>
+            <div class="zoom-item"><span class="zoom-bullet">&#9654;</span><p>Esto no invalida sus conclusiones pero debe considerarse al generalizar</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONNECTIONS ==================== -->
+<section id="connections">
+  <div class="container">
+    <div class="section-num">09 &mdash; Conexiones</div>
+    <h2>Obras <em>relacionadas</em></h2>
+    <div class="connections-grid">
+      <div class="connection">
+        <div class="connection-author">Judith Herman</div>
+        <div class="connection-title">Trauma and Recovery</div>
+        <div class="connection-relation">Marco teorico complementario. Su concepto de que 'la neutralidad sirve al perpetrador' es citado directamente. Ambos convergen en que el abuso es problema de poder, no de patologia.</div>
+      </div>
+      <div class="connection">
+        <div class="connection-author">Gavin de Becker</div>
+        <div class="connection-title">The Gift of Fear</div>
+        <div class="connection-relation">Valida empiricamente que la intuicion de la mujer sobre peligrosidad es el mejor predictor. Ambos argumentan que la sociedad entrena a las mujeres a ignorar senales de peligro.</div>
+      </div>
+      <div class="connection">
+        <div class="connection-author">Rachel Louise Snyder</div>
+        <div class="connection-title">No Visible Bruises</div>
+        <div class="connection-relation">Actualiza la obra con investigacion periodistica del siglo XXI. Explora por que la violencia domestica sigue siendo causa principal de homicidios de mujeres.</div>
+      </div>
+      <div class="connection">
+        <div class="connection-author">Evan Stark</div>
+        <div class="connection-title">Coercive Control</div>
+        <div class="connection-relation">Marco legal y academico para el concepto que Bancroft describe clinicamente: el abuso como patron de control coercitivo, no como incidentes aislados.</div>
+      </div>
+      <div class="connection">
+        <div class="connection-author">Bancroft & Silverman</div>
+        <div class="connection-title">The Batterer as Parent</div>
+        <div class="connection-relation">Extension directa del Capitulo 10 con investigacion academica formal sobre como el abuso afecta la crianza y los resultados para los hijos.</div>
+      </div>
+      <div class="connection">
+        <div class="connection-author">Susan Forward</div>
+        <div class="connection-title">Men Who Hate Women and the Women Who Love Them</div>
+        <div class="connection-relation">Citada directamente. Descripciones 'muy precisas' pero Bancroft corrige: la falta de respeto proviene de valores culturales, no de odio personal.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ANKI ==================== -->
+<section id="anki">
+  <div class="container">
+    <div class="section-num">10 &mdash; Tarjetas Anki</div>
+    <h2>Memorizar lo <em>esencial</em></h2>
+    <div class="anki-grid">
+      <div class="anki-card"><div class="anki-q">Segun Bancroft, cual es la causa REAL del comportamiento abusivo?</div><div class="anki-a">Actitudes de posesion (ownership), derecho (entitlement) y control -- no emociones, enfermedad mental ni adiccion. Las creencias, valores y habitos son las fuerzas impulsoras.</div></div>
+      <div class="anki-card"><div class="anki-q">Cual es la metafora del arbol del abuso?</div><div class="anki-a">Las raices son la posesion (ownership), el tronco es el derecho (entitlement), y las ramas son el control.</div></div>
+      <div class="anki-card"><div class="anki-q">Que prueba el caso de Michael que solo rompia las cosas de Sheila?</div><div class="anki-a">Que el abusador NO pierde el control. Elige selectivamente que destruir, protegiendo siempre sus propias posesiones. La 'perdida de control' es un mito.</div></div>
+      <div class="anki-card"><div class="anki-q">Por que 'no es abusivo porque esta enojado; esta enojado porque es abusivo'?</div><div class="anki-a">Sus expectativas injustas y poco realistas garantizan que su pareja nunca pueda satisfacer todas sus demandas, lo que lo mantiene enojado. La ira es RESULTADO del abuso, no su causa.</div></div>
+      <div class="anki-card"><div class="anki-q">Nombra los 10 tipos de abusadores segun Bancroft.</div><div class="anki-a">Demand Man, Mr. Right, Water Torturer, Drill Sergeant, Mr. Sensitive, The Player, Rambo, The Victim, The Terrorist, Mentally Ill/Addicted.</div></div>
+      <div class="anki-card"><div class="anki-q">Que es el Water Torturer y que prueba sobre el abuso?</div><div class="anki-a">Abusador que ejerce asalto psicologico sin levantar la voz. Prueba que la ira no causa el abuso: usa sarcasmo, burla y calma como arma.</div></div>
+      <div class="anki-card"><div class="anki-q">Cuales son las tres fases del ciclo de abuso?</div><div class="anki-a">(1) Acumulacion de tension: cultiva el 'Jardin de Resentimientos'. (2) Erupcion: explota por lo mas trivial. (3) Corazones y flores: arrepentimiento y reconciliacion que sirven funciones de control.</div></div>
+      <div class="anki-card"><div class="anki-q">Cuantos casos atendio Bancroft donde un periodo bueno duro a largo plazo sin trabajo profundo?</div><div class="anki-a">Cero. De aproximadamente 2,000 hombres, ningun periodo bueno duro a largo plazo sin trabajo profundo en actitudes abusivas.</div></div>
+      <div class="anki-card"><div class="anki-q">Por que la terapia de pareja es peligrosa con un abusador?</div><div class="anki-a">Refuerza que ella 'presiona sus botones', puede generar represalias violentas (caso Irene/Quentin), y crea un 'tag team' entre terapeuta y abusador contra la mujer.</div></div>
+      <div class="anki-card"><div class="anki-q">Que son los 'core entitlements' (privilegios centrales) y por que son cruciales?</div><div class="anki-a">Son el 'bunker trasero' que el abusador defiende a toda costa. Si no renuncia a ellos, toda apariencia de cambio es ilusion. Posiblemente el punto mas pasado por alto sobre cambio.</div></div>
+      <div class="anki-card"><div class="anki-q">Que es el vinculo traumatico (traumatic bonding)?</div><div class="anki-a">Dependencia emocional creada por amabilidad intermitente e impredecible. El rescatador y el torturador son la misma persona. Funciona como sindrome de Estocolmo.</div></div>
+      <div class="anki-card"><div class="anki-q">Por que dice Bancroft que 'un abusador no nace, se hace'?</div><div class="anki-a">La abusividad proviene de socializacion cultural (leyes, religion, medios, pornografia, familia), no de patologia. Mas del 50% de sus clientes NO tuvieron padre abusivo.</div></div>
+      <div class="anki-card"><div class="anki-q">Que revela el caso de Max (abusador alcoholico) sobre la relacion alcohol-abuso?</div><div class="anki-a">Estando extremadamente borracho, golpeo a Lynn solo donde la ropa cubriria. Prueba que las decisiones conscientes continuan durante la intoxicacion: el alcohol no causa el abuso.</div></div>
+      <div class="anki-card"><div class="anki-q">Cual es el principio central para ayudar a una mujer abusada segun el Capitulo 15?</div><div class="anki-a">Ser el opuesto completo del abusador: si el presiona, se paciente; si habla desde arriba, tratala como igual; si piensa por ella, piensa con ella.</div></div>
+      <div class="anki-card"><div class="anki-q">Que significa que 'la neutralidad es complicidad' en el contexto del abuso?</div><div class="anki-a">No tomar posicion ante el abuso sirve los intereses del perpetrador. El abusador se conforma con que alguien tome posicion intermedia porque implica que el problema es de ambos.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CLOSING ==================== -->
+<div class="closing">
+  <p class="closing-text">"El sabor de la libertad y la igualdad es demasiado dulce."</p>
+  <p class="closing-author">Lundy Bancroft &middot; Why Does He Do That?</p>
+</div>
+
+<!-- ==================== JS ==================== -->
+<script>
+(function() {
+  'use strict';
+
+  // TL;DR TABS
+  function initTabs() {
+    var tabContainer = document.querySelector('.tldr-tabs');
+    if (!tabContainer) return;
+    var tabs = tabContainer.querySelectorAll('[data-tab]');
+    var panels = document.querySelectorAll('[data-panel]');
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        panels.forEach(function(p) { p.classList.remove('active'); });
+        tab.classList.add('active');
+        var panel = document.querySelector('[data-panel="' + tab.dataset.tab + '"]');
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+
+  // BILINGUAL QUOTES (mobile tap)
+  function initBilingualQuotes() {
+    var quotes = document.querySelectorAll('.bilingual-quote');
+    quotes.forEach(function(quote) {
+      quote.addEventListener('click', function() {
+        if (window.matchMedia('(hover: hover)').matches) return;
+        quote.classList.toggle('show-translation');
+      });
+    });
+  }
+
+  // ZOOM PANELS (delegated, no onclick attributes)
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.zoom-trigger, .zoom-trigger-inline, .add-quotes-btn');
+    if (!btn) return;
+    e.stopPropagation();
+    var sibling = btn.nextElementSibling;
+    while (sibling && !sibling.classList.contains('zoom-panel')) {
+      sibling = sibling.nextElementSibling;
+    }
+    if (sibling) {
+      sibling.classList.toggle('expanded');
+      if (btn.classList.contains('zoom-trigger')) {
+        btn.textContent = sibling.classList.contains('expanded') ? '\u2296 Cerrar' : '\u2295 Profundizar';
+      }
+    }
+  });
+
+  function init() {
+    initTabs();
+    initBilingualQuotes();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body>
+</html>
